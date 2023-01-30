@@ -3,13 +3,14 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}", // Note the addition of the `app` directory.
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     container: {
       center: true,
+      padding: {
+        DEFAULT: "0.75rem"
+      }
     },
     colors: {
       transparent: 'transparent',
@@ -60,6 +61,12 @@ module.exports = {
       "6xl": ["3.75rem", {
         fontWeight: "800"
       }]
+    },
+    screens: {
+      sm: '36rem',
+      md: '48rem',
+      lg: '62rem',
+      xl: "75rem"
     },
     extend: {
       colors: {
