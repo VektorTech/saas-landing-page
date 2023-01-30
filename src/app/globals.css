@@ -2,14 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@base {
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&display=swap');
+
+@layer base {
   * {
     @apply box-border p-0 m-0;
   }
 
   html,
   body {
-    @apply max-w-[100vw] overflow-hidden;
+    @apply max-w-[100vw] overflow-x-hidden overscroll-x-none;
   }
 }
 
