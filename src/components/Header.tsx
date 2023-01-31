@@ -7,7 +7,7 @@ export default function Header() {
     <header className="fixed w-full py-6 bg-primary z-10">
       <div className="container flex justify-between items-center">
         <Link className="block uppercase text-white font-bold text-xl" href="/">
-          CryptoLogo
+          Crypto Fin
         </Link>
         <nav>
           <ul className="flex justify-center gap-8 text-white text-sm">

@@ -8,7 +8,7 @@ export default function Hero() {
         <div
           className={[
             "pointer-events-none full-size -z-[1]",
-            "bg-[radial-gradient(circle_at_10%_57%,#10ACDD45_0%,transparent_22%),_radial-gradient(circle_at_65%_75%,#10ACDD45_0%,transparent_23%)]",
+            "bg-[radial-gradient(circle_at_12%_57%,#10ACDD45_0%,transparent_22%),_radial-gradient(circle_at_65%_75%,#10ACDD45_0%,transparent_23%)]",
           ].join(" ")}
         >
           <div className="full-size !top-28">
@@ -134,7 +134,7 @@ export default function Hero() {
         </article>
       </section>
 
-      <div className="h-[35rem]">
+      <div className="h-[32rem]">
         <div className="bg-white w-[38%] h-[25rem] -mt-44 mx-auto rounded-lg shadow-[0_0_0.0625rem_1rem_#ffffff16,0_0_0.0625rem_2rem_#ffffff16,0_0_0.0625rem_3rem_#ffffff16]">
           <div className="bg-white h-[30.12rem] w-full -translate-x-4 translate-y-4 rounded-[1.25rem]"></div>
         </div>
