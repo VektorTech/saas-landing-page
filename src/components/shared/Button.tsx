@@ -1,11 +1,11 @@
 import Link from "next/link";
-import React from "react";
 
 export default function Button({
   href,
   children,
   bgColor,
-  classNames = "",
+  rounded = "rounded-lg ",
+  className = "",
   onClick,
 }: ButtonProps) {
   return (
@@ -16,8 +16,9 @@ export default function Button({
         bgColor == "orange"
           ? "bg-accent hover:bg-accent-dark"
           : "bg-purple-350 hover:bg-purple-450",
-        "rounded-[0.625rem] items-center h-15 capitalize",
-        classNames,
+        "items-center h-15 capitalize",
+        rounded,
+        ...className.split(" ").map(style => `!${style}`),
       ].join(" ")}
       href={href}
       onClick={onClick}
@@ -31,6 +32,7 @@ interface ButtonProps {
   href: string;
   children: string;
   bgColor?: "orange";
-  classNames?: string;
+  rounded?: string;
+  className?: string;
   onClick?: () => void;
 }
