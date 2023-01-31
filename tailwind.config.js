@@ -43,7 +43,11 @@ module.exports = {
       sans: ["var(--font-manrope)", ...defaultTheme.fontFamily.sans]
     },
     fontSize: {
-      sm: "1.142rem",
+      sm: ["0.875rem", {
+        lineHeight: "1.625rem",
+        letterSpacing: "0rem",
+        fontWeight: "400"
+      }],
       base: ["1rem", {
         lineHeight: "1.625rem",
         letterSpacing: "0rem",
