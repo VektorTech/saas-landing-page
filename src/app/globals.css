@@ -9,11 +9,15 @@
 
   html,
   body {
-    @apply max-w-[100vw] overflow-x-hidden overscroll-x-none;
+    @apply max-w-[100vw];
   }
 
   html {
-    @apply bg-neutral-50;
+    @apply bg-neutral-100;
+  }
+
+  body {
+    @apply overflow-x-hidden overscroll-x-none min-h-screen;
   }
 }
 
