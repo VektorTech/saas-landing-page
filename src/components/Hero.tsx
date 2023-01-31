@@ -8,7 +8,7 @@ export default function Hero() {
         <div
           className={[
             "pointer-events-none full-size -z-[1]",
-            "bg-[radial-gradient(circle_at_10%_55%,#10ACDD45_0%,transparent_23%),_radial-gradient(circle_at_65%_75%,#10ACDD45_0%,transparent_23%)]",
+            "bg-[radial-gradient(circle_at_10%_57%,#10ACDD45_0%,transparent_22%),_radial-gradient(circle_at_65%_75%,#10ACDD45_0%,transparent_23%)]",
           ].join(" ")}
         >
           <div className="full-size !top-28">
