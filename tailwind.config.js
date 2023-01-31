@@ -70,11 +70,11 @@ module.exports = {
       }],
       "5xl": ["3.125rem", {
         lineHeight: "3.5rem",
-        letterSpacing: "-0.025rem",
+        letterSpacing: "-0.1rem",
         fontWeight: "700"
       }],
       "6xl": ["3.75rem", {
-        letterSpacing: "-0.025rem",
+        letterSpacing: "-0.1rem",
         fontWeight: "800",
         lineHeight: "5rem"
       }]
