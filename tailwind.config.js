@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,19 +14,25 @@ module.exports = {
       }
     },
     colors: {
+      inherit: "inherit",
       transparent: 'transparent',
       current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
       midnight: "#121313",
       primary: {
         DEFAULT: "#3734A9",
-        bland: "#4F46BA",
         dark: "#1B1C31"
       },
       accent: {
-        DEFAULT: "#FF7F5",
-        bland: "#F9896B"
+        DEFAULT: "#FF7F5C",
+        bland: "#F9896B",
+        dark: "#E77B5A",
+        light: "#FC997E"
       },
       neutral: {
+        ...colors.neutral,
         100: "#FAFBFF",
         200: "#C4C4C4",
         300: "#EBECE8",
@@ -39,27 +46,28 @@ module.exports = {
       sm: "1.142rem",
       base: ["1rem", {
         lineHeight: "1.625rem",
-        letterSpacing: "-2%",
+        letterSpacing: "0rem",
         fontWeight: "500"
       }],
       lg: ["1.125rem", {
         lineHeight: "1.625rem",
-        letterSpacing: "-2%",
+        letterSpacing: "0rem",
         fontWeight: "500"
       }],
       xl: ["1.25rem", {
         lineHeight: "1.875rem",
-        letterSpacing: "-2%",
+        letterSpacing: "0rem",
         fontWeight: "600"
       }],
       "2xl": ["1.375rem"],
       "5xl": ["3.125rem", {
         lineHeight: "3.5rem",
-        letterSpacing: "-3%",
+        letterSpacing: "-0.025rem",
         fontWeight: "700"
       }],
       "6xl": ["3.75rem", {
-        fontWeight: "800"
+        letterSpacing: "-0.025rem",
+        fontWeight: "800",
       }]
     },
     screens: {
@@ -79,6 +87,16 @@ module.exports = {
         blue: {
           250: "#A0B3E9"
         },
+        purple: {
+          350: "#4F46BA",
+          450: "#443BAC"
+        }
+      },
+      spacing: {
+        15: "3.75rem"
+      },
+      borderRadius: {
+        lg: "0.625rem"
       }
     }
   },
