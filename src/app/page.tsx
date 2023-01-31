@@ -1,11 +1,11 @@
-import Button from "@/components/shared/Button";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <main>
-      <div className="container">
-        <Button href="#">Start Free</Button>
-      </div>
+      <Header />
+      <Hero />
     </main>
   )
 }
