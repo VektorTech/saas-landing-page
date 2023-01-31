@@ -13,3 +13,13 @@
   }
 }
 
+@layer utilities {
+  .full-size {
+    @apply absolute left-0 right-0 top-0 bottom-0;
+  }
+
+  .center {
+    @apply left-1/2 -translate-x-1/2;
+  }
+}
+
