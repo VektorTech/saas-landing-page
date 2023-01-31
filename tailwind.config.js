@@ -47,17 +47,17 @@ module.exports = {
       base: ["1rem", {
         lineHeight: "1.625rem",
         letterSpacing: "0rem",
-        fontWeight: "500"
+        fontWeight: "400"
       }],
       lg: ["1.125rem", {
         lineHeight: "1.625rem",
         letterSpacing: "0rem",
-        fontWeight: "500"
+        fontWeight: "400"
       }],
       xl: ["1.25rem", {
         lineHeight: "1.875rem",
         letterSpacing: "0rem",
-        fontWeight: "600"
+        fontWeight: "400"
       }],
       "2xl": ["1.375rem"],
       "5xl": ["3.125rem", {
@@ -68,6 +68,7 @@ module.exports = {
       "6xl": ["3.75rem", {
         letterSpacing: "-0.025rem",
         fontWeight: "800",
+        lineHeight: "5rem"
       }]
     },
     screens: {
