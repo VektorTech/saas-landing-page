@@ -6,9 +6,9 @@ import StockImg1 from "@/images/woman.png";
 export default function Content() {
   return (
     <section className="pt-14 container">
-      <article className="h-[35.5rem] grid grid-cols-2 gap-x-16">
-        <div className="px-8 relative">
-          <div className="[clip-path:polygon(100%_13%,100%_93%,93%_100%,0_100%,0_13%)] -z-10 absolute w-[92%] h-full bg-[#EBECE8]"></div>
+      <article className="grid grid-cols-2 gap-x-16">
+        <div className="px-8 relative h-[35.5rem]">
+          <div className="[clip-path:polygon(100%_13%,100%_93%,93%_100%,0_100%,0_13%)] -z-10 absolute w-[93%] h-full bg-[#EBECE8]"></div>
           <Image
             className="mx-auto"
             src={StockImg1}
@@ -17,7 +17,7 @@ export default function Content() {
             alt="woman"
           />
         </div>
-        <div className="flex flex-col justify-end pb-10">
+        <div className="flex flex-col justify-end pb-10 h-[35.5rem]">
           <h2 className="uppercase text-lg font-extrabold text-primary">
             Our Feature
           </h2>
@@ -40,11 +40,11 @@ export default function Content() {
         </div>
       </article>
 
-      <article className="h-[30rem] grid grid-cols-2 gap-x-8 mt-20">
-        <div className="relative col-start-2 row-end-2">
+      <article className="grid grid-cols-2 gap-x-8 mt-20">
+        <div className="h-[30rem] relative col-start-2 row-end-2">
           <div className="[clip-path:polygon(0_0,100%_25%,100%_100%,0_75%)] -z-10 absolute w-[50%] h-[55%] bg-[#EBECE8] mt-32"></div>
         </div>
-        <div className="col-start-1 flex flex-col justify-end pb-7">
+        <div className="h-[30rem] col-start-1 flex flex-col justify-end pb-7">
           <h2 className="uppercase text-lg font-extrabold text-primary">
             Our Feature
           </h2>
