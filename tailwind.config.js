@@ -68,6 +68,11 @@ module.exports = {
         letterSpacing: "-0.025rem",
         fontWeight: "600"
       }],
+      "3xl": ["1.625rem", {
+        lineHeight: "1.875rem",
+        letterSpacing: "-0.025rem",
+        fontWeight: "600"
+      }],
       "5xl": ["3.125rem", {
         lineHeight: "3.5rem",
         letterSpacing: "-0.1rem",
