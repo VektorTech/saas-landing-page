@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Related from "@/components/Related";
 import Content from "@/components/Content";
 import Feature from "@/components/Feature";
+import GDPRFeature from "@/components/GDPRFeature";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Related />
       <Content />
       <Feature />
+      <GDPRFeature />
     </main>
   )
 }
