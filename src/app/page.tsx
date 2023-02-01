@@ -4,6 +4,7 @@ import Related from "@/components/Related";
 import Content from "@/components/Content";
 import Feature from "@/components/Feature";
 import GDPRFeature from "@/components/GDPRFeature";
+import ValuePropositions from "@/components/ValuePropositions";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Content />
       <Feature />
       <GDPRFeature />
+      <ValuePropositions />
     </main>
   )
 }
