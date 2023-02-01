@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Button({
   href,
   children,
-  bgColor,
+  bgColor = "purple",
   rounded = "rounded-lg ",
   className = "",
   onClick,
@@ -13,12 +13,11 @@ export default function Button({
       className={[
         "inline-flex justify-center text-base px-10 transition-colors",
         "text-white hover:text-gray-100",
-        bgColor == "orange"
-          ? "bg-accent hover:bg-accent-dark"
-          : "bg-purple-350 hover:bg-purple-450",
-        "items-center h-15 capitalize",
+        "items-center h-15 capitalize whitespace-nowrap",
+        bgColors[bgColor],
         rounded,
-        ...className.split(" ").map(style => `!${style}`),
+        // ...className.split(" ").map((style) => `!${style}`),
+        className
       ].join(" ")}
       href={href}
       onClick={onClick}
@@ -28,10 +27,16 @@ export default function Button({
   );
 }
 
+const bgColors: Record<Exclude<ButtonProps["bgColor"], undefined>, string> = {
+  orange: "bg-accent hover:bg-accent-dark",
+  primary: "bg-primary hover:bg-primary-dark",
+  purple: "bg-purple-350 hover:bg-purple-450",
+};
+
 interface ButtonProps {
   href: string;
   children: string;
-  bgColor?: "orange";
+  bgColor?: "orange" | "primary" | "purple";
   rounded?: string;
   className?: string;
   onClick?: () => void;
