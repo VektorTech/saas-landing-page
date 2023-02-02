@@ -75,7 +75,12 @@ export default function Feature() {
             </button>
 
             <div className="w-[148px] h-[148px] text-[#C4C4C4] opacity-30 absolute -top-[2.4rem] -left-[2.6rem]">
-              <svg viewBox="0 0 100 100">
+              <svg
+                width="0"
+                height="0"
+                className="w-full h-full"
+                viewBox="0 0 100 100"
+              >
                 {[...Array(49)].map((_, i) => (
                   <rect
                     fill="currentColor"
@@ -96,7 +101,7 @@ export default function Feature() {
 }
 
 const RightArrow = (props: SVGAttributes<SVGSVGElement>) => (
-  <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
+  <svg width="0" height="0" fill="currentColor" viewBox="0 0 24 24" {...props}>
     <path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z" />
   </svg>
 );

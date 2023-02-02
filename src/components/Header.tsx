@@ -18,7 +18,8 @@ export default function Header() {
             </li>
             <li>
               <Link href="#">
-                Template <ChevronDown className="w-2 h-2 inline ml-2 mb-[2px]" />
+                Template{" "}
+                <ChevronDown className="w-2 h-2 inline ml-2 mb-[2px]" />
               </Link>
             </li>
             <li>
@@ -43,7 +44,11 @@ export default function Header() {
 }
 
 const ChevronDown = (props: SVGAttributes<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-    <polygon strokeWidth="2" stroke="currentColor" points="12 20.1 0.1 8.2 2.9 5.3 12 14.4 21.1 5.3 23.9 8.2 12 20.1" />
+  <svg width="0" height="0" viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <polygon
+      strokeWidth="2"
+      stroke="currentColor"
+      points="12 20.1 0.1 8.2 2.9 5.3 12 14.4 21.1 5.3 23.9 8.2 12 20.1"
+    />
   </svg>
 );

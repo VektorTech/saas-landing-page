@@ -22,6 +22,8 @@ export default function Hero() {
 
             <div className="absolute w-8 h-20 left-[1%] top-[28%]">
               <svg
+                width="0"
+                height="0"
                 preserveAspectRatio="none"
                 viewBox="0 0 66 100"
                 className="opacity-20 w-full h-full"
@@ -29,13 +31,14 @@ export default function Hero() {
                 <polygon
                   className="fill-primary stroke-white stroke-2"
                   points="0 14 66 0 66 84 0 100"
-
                 />
               </svg>
             </div>
 
             <div className="absolute w-24 h-12 left-[42%] bottom-[32%]">
               <svg
+                width="0"
+                height="0"
                 preserveAspectRatio="none"
                 viewBox="0 0 99 74"
                 className="opacity-10 w-full h-full"
@@ -51,6 +54,8 @@ export default function Hero() {
 
             <div className="absolute w-16 h-24 right-[28%] top-[22%]">
               <svg
+                width="0"
+                height="0"
                 preserveAspectRatio="none"
                 viewBox="0 0 100 100"
                 className="opacity-20 w-full h-full"
@@ -66,6 +71,8 @@ export default function Hero() {
 
             <div className="absolute w-16 h-24 right-[18%] bottom-[45%]">
               <svg
+                width="0"
+                height="0"
                 preserveAspectRatio="none"
                 viewBox="0 0 100 100"
                 className="opacity-10 w-full h-full"
@@ -81,6 +88,8 @@ export default function Hero() {
 
             <div className="absolute w-24 h-20 left-[8%] bottom-[15%]">
               <svg
+                width="0"
+                height="0"
                 preserveAspectRatio="none"
                 viewBox="0 0 100 100"
                 className="opacity-10 w-full h-full"
@@ -97,7 +106,8 @@ export default function Hero() {
         </div>
         <article className="container text-center pt-40">
           <h2 className="text-white text-6xl">
-            Managing your crypto portfolio<br />
+            Managing your crypto portfolio
+            <br />
             has never been easier
           </h2>
           <p className="text-white text-xl mt-8">
@@ -113,9 +123,9 @@ export default function Hero() {
             <button className="text-white text-base flex items-center gap-3">
               <div className="h-15 w-15 rounded-full bg-green text-white flex justify-center items-center">
                 <svg
-                  className="pl-[2px]"
-                  width="1.88rem"
-                  height="1.88rem"
+                  className="pl-[2px] w-[1.88rem] h-[1.88rem]"
+                  width="0"
+                  height="0"
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
