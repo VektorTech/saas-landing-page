@@ -9,9 +9,10 @@ export default function Feature() {
     <section className="bg-primary text-white mt-28 pt-36 pb-28" id="feature-1">
       <div className="container">
         <header className="flex justify-between items-center gap-20">
-          <h2 className="text-[2.75rem] leading-[3.125rem] font-extrabold">
+          <h2 className="text-[2.75rem] leading-[3.125rem] tracking-tight font-extrabold">
             Yet preference connection unpleasant
-            <wbr /> yet melancholy but end appearance
+            <br />
+            yet melancholy but end appearance
           </h2>
           <Button href="#" bgColor="orange">
             Get Started Now
