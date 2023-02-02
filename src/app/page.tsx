@@ -6,6 +6,7 @@ import Feature from "@/components/Feature";
 import GDPRFeature from "@/components/GDPRFeature";
 import ValuePropositions from "@/components/ValuePropositions";
 import Footer from "@/components/Footer";
+import Blog from "@/components/Blog";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Feature />
       <GDPRFeature />
       <ValuePropositions />
+      <Blog />
       <Footer />
     </>
   )
