@@ -5,10 +5,11 @@ import Content from "@/components/Content";
 import Feature from "@/components/Feature";
 import GDPRFeature from "@/components/GDPRFeature";
 import ValuePropositions from "@/components/ValuePropositions";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Header />
       <Hero />
       <Related />
@@ -16,6 +17,7 @@ export default function Home() {
       <Feature />
       <GDPRFeature />
       <ValuePropositions />
-    </main>
+      <Footer />
+    </>
   )
 }
