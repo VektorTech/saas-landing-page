@@ -7,8 +7,8 @@ export default function GDPRFeature() {
         Germany-based <br />
         &amp; GDPR Compliant
       </h2>
-      <div className="grid grid-cols-3 gap-x-8">
-        <div className="flex gap-x-4 items-center">
+      <div className="grid grid-cols-3 gap-x-10">
+        <div className="flex gap-x-5 items-center">
           <div className="bg-neutral-300 w-15 h-15 shrink-0 rounded-md">
             <SecureIcon className="m-auto h-full" />
           </div>
