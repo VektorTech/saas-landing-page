@@ -14,7 +14,7 @@ export default function Blog() {
       <article className="bg-white flex mt-20">
         <section className="pt-6 px-8">
           <p className="uppercase text-base font-bold">best practices</p>
-          <h3 className="text-[1.82rem] font-bold leading-[2.3rem] mt-3 max-w-[80%]">
+          <h3 className="text-[1.82rem] font-bold leading-[2.3rem] tracking-tight mt-3 max-w-[80%]">
             In design active temper be uneasy. Thirty for remove plenty regard.
           </h3>
           <p className="mt-16 text-base font-semibold">
@@ -35,7 +35,7 @@ export default function Blog() {
         <article className="bg-white mt-7">
           <section className="pt-6 px-8 h-[14.5rem]">
             <p className="uppercase text-base font-bold">best practices</p>
-            <h3 className="text-[1.82rem] font-bold leading-[2.3rem] mt-3">
+            <h3 className="text-[1.82rem] font-bold leading-[2.3rem] tracking-tight mt-3">
               Partiality on or continuing particular principles as.
             </h3>
           </section>
@@ -51,7 +51,7 @@ export default function Blog() {
         <article className="bg-white mt-7">
           <section className="pt-6 px-8 h-[14.5rem]">
             <p className="uppercase text-base font-bold">best practices</p>
-            <h3 className="text-[1.82rem] font-bold leading-[2.3rem] mt-3">
+            <h3 className="text-[1.82rem] font-bold leading-[2.3rem] tracking-tight mt-3">
               Village did removed enjoyed explain
             </h3>
           </section>
@@ -67,7 +67,7 @@ export default function Blog() {
         <article className="bg-white mt-7">
           <section className="pt-6 px-8 h-[14.5rem]">
             <p className="uppercase text-base font-bold">best practices</p>
-            <h3 className="text-[1.82rem] font-bold leading-[2.3rem] mt-3">
+            <h3 className="text-[1.82rem] font-bold leading-[2.3rem] tracking-tight mt-3">
               Wise busy past both park when an ye no. Nay likely her length.
             </h3>
           </section>
