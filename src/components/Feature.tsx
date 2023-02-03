@@ -60,13 +60,13 @@ export default function Feature() {
           </div>
           <div className="relative">
             <Image
-              className=""
+              className="relative z-10"
               src={VideoPoster}
               width={VideoPoster.width}
               height={VideoPoster.height}
               alt=""
             />
-            <button className="flex absolute bg-white text-accent rounded-full w-24 h-24 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <button className="z-10 flex absolute bg-white text-accent rounded-full w-24 h-24 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               <RightArrow
                 className="m-auto pl-[5px]"
                 width="45px"
@@ -74,7 +74,7 @@ export default function Feature() {
               />
             </button>
 
-            <div className="w-[148px] h-[148px] text-[#C4C4C4] opacity-30 absolute -top-[2.4rem] -left-[2.6rem]">
+            <div className="w-[148px] h-[148px] text-[#C4C4C4] opacity-30 absolute -top-[2.4rem] -left-[2.6rem] z-10">
               <svg
                 width="0"
                 height="0"
@@ -93,6 +93,33 @@ export default function Feature() {
                 ))}
               </svg>
             </div>
+
+            <svg
+              className="absolute -right-5 top-0 mt-[48%] z-0"
+              width="55"
+              height="106"
+              viewBox="0 0 55 106"
+              fill="none"
+            >
+              <path d="M55 83.74V0L0 23.32V106L55 83.74Z" fill="#F7FA62" />
+            </svg>
+
+            <svg
+              className="absolute -right-8 -top-10 z-10"
+              width="56"
+              height="58"
+              viewBox="0 0 56 58"
+              fill="none"
+            >
+              <path
+                d="M24 2.41593e-06C28.2023 2.23224e-06 32.3635 0.827707 36.2459 2.43586C40.1283 4.04401 43.6559 6.40111 46.6274 9.37258C49.5989 12.3441 51.956 15.8717 53.5641 19.7541C55.1723 23.6365 56 27.7977 56 32L24 32L24 2.41593e-06Z"
+                fill="#E8F2FF"
+              />
+              <path
+                d="M-2.79753e-06 26C4.2023 26 8.36345 26.8277 12.2459 28.4359C16.1283 30.044 19.6559 32.4011 22.6274 35.3726C25.5989 38.3441 27.956 41.8717 29.5641 45.7541C31.1723 49.6365 32 53.7977 32 58L-1.39876e-06 58L-2.79753e-06 26Z"
+                fill="#E8F2FF"
+              />
+            </svg>
           </div>
         </div>
       </div>

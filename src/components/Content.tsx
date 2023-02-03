@@ -2,6 +2,12 @@ import Image from "next/image";
 import Button from "./shared/Button";
 
 import StockImg1 from "@/images/woman.png";
+import CardGraphic from "@/images/card-graphic.svg";
+
+import Graphic0 from "@/images/content/graphic0.svg";
+import Graphic1 from "@/images/content/graphic1.svg";
+import Graphic2 from "@/images/content/graphic2.svg";
+import Graphic3 from "@/images/content/graphic3.svg";
 
 export default function Content() {
   return (
@@ -16,6 +22,10 @@ export default function Content() {
             height={StockImg1.height}
             alt="woman"
           />
+          <Image className="absolute -left-[16%] top-[55%]" alt="" src={Graphic0} />
+          <Image className="absolute left-[7%] top-[78%]" alt="" src={Graphic1} />
+          <Image className="absolute -right-[2%] top-[80%]" alt="" src={Graphic2} />
+          <Image className="absolute -right-[23%] top-[57%]" alt="" src={Graphic3} />
         </div>
         <div className="flex flex-col justify-end pb-10 h-[35.5rem]">
           <h2 className="uppercase text-lg font-extrabold text-primary">
@@ -41,8 +51,8 @@ export default function Content() {
       </article>
 
       <article className="grid grid-cols-2 gap-x-8 mt-20">
-        <div className="h-[30rem] relative col-start-2 row-end-2">
-          <div className="[clip-path:polygon(0_0,100%_25%,100%_100%,0_75%)] -z-10 absolute w-[50%] h-[55%] bg-[#EBECE8] mt-32"></div>
+        <div className="h-[30rem] relative col-start-2 row-end-2 overflow-hidden">
+          <Image className="max-w-[118%]" src={CardGraphic} alt="" />
         </div>
         <div className="h-[30rem] col-start-1 flex flex-col justify-end pb-7">
           <h2 className="uppercase text-lg font-extrabold text-primary">
