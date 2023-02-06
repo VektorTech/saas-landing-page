@@ -5,6 +5,7 @@ import StockImage1 from "@/images/blog-stock-1.png";
 import StockImage2 from "@/images/blog-stock-2.png";
 import StockImage3 from "@/images/blog-stock-3.png";
 import StockImage4 from "@/images/blog-stock-4.png";
+import { SVGAttributes } from "react";
 
 export default function Blog() {
   return (
@@ -84,7 +85,7 @@ export default function Blog() {
   );
 }
 
-const RightArrow = (props: any) => (
+const RightArrow = (props: SVGAttributes<SVGSVGElement>) => (
   <svg {...props} width="13" height="10" viewBox="0 0 13 10" fill="none">
     <path
       d="M0 4.75H11.5M11.5 4.75L7 0.75M11.5 4.75L7 9.25"

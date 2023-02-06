@@ -16,8 +16,7 @@ export default function Button({
         "items-center h-15 py-2 capitalize whitespace-nowrap",
         bgColors[bgColor],
         rounded,
-        // ...className.split(" ").map((style) => `!${style}`),
-        className
+        ...className.split(" ").map((style) => `!${style}`),
       ].join(" ")}
       href={href}
       onClick={onClick}
