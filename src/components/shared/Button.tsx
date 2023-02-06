@@ -13,7 +13,7 @@ export default function Button({
       className={[
         "inline-flex justify-center text-base px-10 transition-colors",
         "text-white hover:text-gray-100",
-        "items-center h-15 capitalize whitespace-nowrap",
+        "items-center h-15 py-2 capitalize whitespace-nowrap",
         bgColors[bgColor],
         rounded,
         // ...className.split(" ").map((style) => `!${style}`),

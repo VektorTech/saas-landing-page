@@ -14,7 +14,7 @@ export default function Related() {
       <h2 className="text-2xl">
         Over 32k+ software businesses growing with Crypto Fin.
       </h2>
-      <div className="mt-9 h-8 flex justify-between items-center overflow-hidden">
+      <div className="mt-9 h-8 gap-x-5 flex justify-between items-center overflow-hidden">
         <Image src={OpenZeppelinLogo} width="136" alt="openzeppelin" />
         <Image src={OracleLogo} width="136" alt="oracle" />
         <Image src={MorpheusLogo} width="136" alt="morpheus" />

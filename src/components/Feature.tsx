@@ -66,7 +66,7 @@ export default function Feature() {
               height={VideoPoster.height}
               alt=""
             />
-            <button className="z-10 flex absolute bg-white text-accent rounded-full w-24 h-24 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <button className="z-10 flex absolute bg-white text-accent rounded-full w-24 h-24 top-0 mt-[29.44%] left-1/2 -translate-x-1/2 -translate-y-1/2">
               <RightArrow
                 className="m-auto pl-[5px]"
                 width="45px"

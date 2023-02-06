@@ -4,7 +4,7 @@ import Button from "./shared/Button";
 
 export default function Header() {
   return (
-    <header className="fixed w-full py-6 bg-primary z-20">
+    <header className="fixed w-full py-6 bg-primary z-20 whitespace-nowrap">
       <div className="container flex justify-between items-center">
         <Link className="block uppercase text-white font-bold text-xl" href="/">
           Crypto Fin

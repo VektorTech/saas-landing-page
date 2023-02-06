@@ -5,7 +5,7 @@ export default function ValuePropositions() {
     <section className="container flex gap-x-8">
       <article
         className={[
-          "text-center bg-white rounded-3xl py-10 px-14",
+          "text-center bg-white rounded-3xl py-10 px-14 overflow-hidden",
           "shadow-[0_141px_113px_0_#00000007,0_91px_66px_0_#00000005,0_55px_36px_0_#00000004,0_28px_18px_0_#00000004,0_12px_9px_0_#00000003,0_3px_4px_0_#00000002]",
         ].join(" ")}
       >
@@ -23,7 +23,7 @@ export default function ValuePropositions() {
 
       <article
         className={[
-          "text-center bg-white rounded-3xl py-10 px-14",
+          "text-center bg-white rounded-3xl py-10 px-14 overflow-hidden",
           "shadow-[0_141px_113px_0_#00000007,0_91px_66px_0_#00000005,0_55px_36px_0_#00000004,0_28px_18px_0_#00000004,0_12px_9px_0_#00000003,0_3px_4px_0_#00000002]",
         ].join(" ")}
       >

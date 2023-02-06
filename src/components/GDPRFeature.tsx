@@ -2,7 +2,7 @@ import { SVGAttributes } from "react";
 
 export default function GDPRFeature() {
   return (
-    <section className="container mt-24 mb-20 p-11 rounded-[1.2rem] flex gap-x-14 items-center bg-white border-[#DEE1E6] border">
+    <section className="container mt-24 mb-20 p-11 rounded-[1.2rem] flex gap-x-14 items-center bg-white border-[#DEE1E6] border overflow-hidden">
       <h2 className="text-[2.25rem] tracking-tight font-extrabold whitespace-nowrap">
         Germany-based <br />
         &amp; GDPR Compliant

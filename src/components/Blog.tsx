@@ -33,7 +33,7 @@ export default function Blog() {
 
       <div className="grid grid-cols-3 gap-x-7">
         <article className="bg-white mt-7">
-          <section className="pt-6 px-8 h-[14.5rem]">
+          <section className="pt-6 px-8 h-[14.5rem] overflow-hidden">
             <p className="uppercase text-base font-bold">best practices</p>
             <h3 className="text-[1.82rem] font-bold leading-[2.3rem] tracking-tight mt-3">
               Partiality on or continuing particular principles as.
@@ -49,7 +49,7 @@ export default function Blog() {
         </article>
 
         <article className="bg-white mt-7">
-          <section className="pt-6 px-8 h-[14.5rem]">
+          <section className="pt-6 px-8 h-[14.5rem] overflow-hidden">
             <p className="uppercase text-base font-bold">best practices</p>
             <h3 className="text-[1.82rem] font-bold leading-[2.3rem] tracking-tight mt-3">
               Village did removed enjoyed explain
@@ -65,7 +65,7 @@ export default function Blog() {
         </article>
 
         <article className="bg-white mt-7">
-          <section className="pt-6 px-8 h-[14.5rem]">
+          <section className="pt-6 px-8 h-[14.5rem] overflow-hidden">
             <p className="uppercase text-base font-bold">best practices</p>
             <h3 className="text-[1.82rem] font-bold leading-[2.3rem] tracking-tight mt-3">
               Wise busy past both park when an ye no. Nay likely her length.
