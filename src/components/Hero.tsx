@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Button from "./shared/Button";
-
-import DashboardImage from "@/images/dashboard.png";
+import BannerImage from "./BannerImage";
 
 export default function Hero() {
   return (
@@ -149,21 +147,7 @@ export default function Hero() {
         </article>
       </section>
 
-      <div className="relative">
-        <div className="w-[75%] sm:w-[70%] lg:w-[60%] xl:w-[38%] max-w-[47rem] h-[80%] mx-auto">
-          <div className="bg-white -mt-[22%] rounded-lg shadow-[0_0_0.0625rem_0.5rem_#ffffff16,0_0_0.0625rem_1rem_#ffffff16,0_0_0.0625rem_1.5rem_#ffffff16] lg:shadow-[0_0_0.0625rem_1rem_#ffffff16,0_0_0.0625rem_2rem_#ffffff16,0_0_0.0625rem_3rem_#ffffff16]">
-            <div className="bg-white w-full -translate-x-4 translate-y-4 rounded-[1.25rem] shadow-[0_24px_34px_0_#00000010]">
-              <Image
-                src={DashboardImage}
-                width={DashboardImage.width}
-                height={DashboardImage.height}
-                blurDataURL={DashboardImage.blurDataURL}
-                alt="dashboard"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <BannerImage />
     </>
   );
 }

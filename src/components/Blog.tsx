@@ -13,7 +13,7 @@ export default function Blog() {
       <h2 className="text-3xl md:text-5xl font-extrabold">Recent Blogs</h2>
 
       <article className="bg-white flex flex-col lg:flex-row mt-10 md:mt-20">
-        <section className="pt-4 md:pt-6 px-3 md:px-8 pb-10 lg:pb-0">
+        <section className="pt-4 md:pt-6 px-3 md:px-8 pb-10 lg:pb-0 md:w-[60%]">
           <p className="uppercase text-sm md:text-base font-bold md:font-bold">best practices</p>
           <h3 className="text-lg sm:text-xl md:text-[1.82rem] font-bold md:font-bold md:leading-[2.2rem] tracking-tight mt-3 max-w-[80%]">
             In design active temper be uneasy. Thirty for remove plenty regard.
@@ -26,7 +26,7 @@ export default function Blog() {
         </section>
         <Image
           alt=""
-          className="w-full"
+          className="w-full md:w-[40%]"
           src={StockImage1}
           width={StockImage1.width * 0.94}
           height={StockImage1.height * 0.94}
