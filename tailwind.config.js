@@ -23,7 +23,8 @@ module.exports = {
       midnight: "#121313",
       primary: {
         DEFAULT: "#3734A9",
-        dark: "#1B1C31"
+        dark: "#1B1C31",
+        dim: "#2C2A95"
       },
       accent: {
         DEFAULT: "#FF7F5C",

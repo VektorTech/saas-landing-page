@@ -28,7 +28,7 @@ export default function Button({
 
 const bgColors: Record<Exclude<ButtonProps["bgColor"], undefined>, string> = {
   orange: "bg-accent hover:bg-accent-dark",
-  primary: "bg-primary hover:bg-primary-dark",
+  primary: "bg-primary hover:bg-primary-dim",
   purple: "bg-purple-350 hover:bg-purple-450",
 };
 
