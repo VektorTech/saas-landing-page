@@ -32,16 +32,24 @@ export default function Footer() {
           <h3 className="text-xl capitalize font-extrabold">Company</h3>
           <ul className="mt-9 space-y-5">
             <li>
-              <Link href="/">About Us</Link>
+              <Link href="/" className="hover:underline">
+                About Us
+              </Link>
             </li>
             <li>
-              <Link href="/">Careers</Link>
+              <Link href="/" className="hover:underline">
+                Careers
+              </Link>
             </li>
             <li>
-              <Link href="/">Blog</Link>
+              <Link href="/" className="hover:underline">
+                Blog
+              </Link>
             </li>
             <li>
-              <Link href="/">Pricing</Link>
+              <Link href="/" className="hover:underline">
+                Pricing
+              </Link>
             </li>
           </ul>
         </nav>
@@ -49,16 +57,24 @@ export default function Footer() {
           <h3 className="text-xl capitalize font-extrabold">Product</h3>
           <ul className="mt-9 space-y-5">
             <li>
-              <Link href="/">Invoicing Platform</Link>
+              <Link href="/" className="hover:underline">
+                Invoicing Platform
+              </Link>
             </li>
             <li>
-              <Link href="/">Accounting Platform</Link>
+              <Link href="/" className="hover:underline">
+                Accounting Platform
+              </Link>
             </li>
             <li>
-              <Link href="/">Create Proposal</Link>
+              <Link href="/" className="hover:underline">
+                Create Proposal
+              </Link>
             </li>
             <li>
-              <Link href="/">Contracts</Link>
+              <Link href="/" className="hover:underline">
+                Contracts
+              </Link>
             </li>
           </ul>
         </nav>
@@ -66,16 +82,24 @@ export default function Footer() {
           <h3 className="text-xl capitalize font-extrabold">Resources</h3>
           <ul className="mt-9 space-y-5">
             <li>
-              <Link href="/">Proposal Template</Link>
+              <Link href="/" className="hover:underline">
+                Proposal Template
+              </Link>
             </li>
             <li>
-              <Link href="/">Invoice Template</Link>
+              <Link href="/" className="hover:underline">
+                Invoice Template
+              </Link>
             </li>
             <li>
-              <Link href="/">Tutorial</Link>
+              <Link href="/" className="hover:underline">
+                Tutorial
+              </Link>
             </li>
             <li>
-              <Link href="/">How to write a contract</Link>
+              <Link href="/" className="hover:underline">
+                How to write a contract
+              </Link>
             </li>
           </ul>
         </nav>
@@ -84,7 +108,15 @@ export default function Footer() {
       <section className="container py-10 flex flex-col lg:flex-row text-center justify-between">
         <p className="text-xs">
           &copy; {new Date().getFullYear()} Crypto Fin. All rights reserved.
-          &mdash; Privacy Policy &bull; Terms of Services
+          &mdash;
+          {" "}
+          <Link href="/" className="hover:underline">
+            Privacy Policy
+          </Link>
+          {" "}&bull;{" "}
+          <Link href="/" className="hover:underline">
+            Terms of Services
+          </Link>
         </p>
         <p className="text-xs mt-2 lg:mt-0">
           Supported by <strong>Microsoft Startup</strong>

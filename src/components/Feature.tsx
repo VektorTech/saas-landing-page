@@ -23,7 +23,7 @@ export default function Feature() {
           <div className="lg:max-w-[27.1875rem] mt-10 md:mt-20 lg:mt-0">
             <article className="flex items-start gap-x-3 md:gap-x-7">
               <div className="w-15 h-15 md:w-24 md:h-24 shrink-0 relative before:content-[''] before:block before:absolute before:w-full before:h-full before:bg-primary-dark before:opacity-20 before:rounded-full flex justify-center items-center text-4xl md:text-5xl">
-                <span className="relative z-[1] text-[#E8F2FF]">1</span>
+                <span className="relative z-[1] text-[#E8F2FF] select-none">1</span>
               </div>
               <div className="pt-2">
                 <h3 className="text-lg md:text-3xl font-bold text-[#E8F2FF]">
@@ -36,7 +36,7 @@ export default function Feature() {
             </article>
             <article className="flex items-start gap-x-3 md:gap-x-7 mt-9">
               <div className="w-15 h-15 md:w-24 md:h-24 shrink-0 relative before:content-[''] before:block before:absolute before:w-full before:h-full before:bg-primary-dark before:opacity-20 before:rounded-full flex justify-center items-center text-4xl md:text-5xl">
-                <span className="relative z-[1] text-[#E8F2FF]">2</span>
+                <span className="relative z-[1] text-[#E8F2FF] select-none">2</span>
               </div>
               <div className="pt-2">
                 <h3 className="text-lg md:text-3xl font-bold text-[#E8F2FF]">Dedicated Team</h3>
@@ -47,7 +47,7 @@ export default function Feature() {
             </article>
             <article className="flex items-start gap-x-3 md:gap-x-7 mt-9">
               <div className="w-15 h-15 md:w-24 md:h-24 shrink-0 relative before:content-[''] before:block before:absolute before:w-full before:h-full before:bg-primary-dark before:opacity-20 before:rounded-full flex justify-center items-center text-4xl md:text-5xl">
-                <span className="relative z-[1] text-[#E8F2FF]">3</span>
+                <span className="relative z-[1] text-[#E8F2FF] select-none">3</span>
               </div>
               <div className="pt-2">
                 <h3 className="text-lg md:text-3xl font-bold text-[#E8F2FF]">24/7 Hours Support</h3>
