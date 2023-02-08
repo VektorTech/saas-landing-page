@@ -78,15 +78,20 @@ module.exports = {
         letterSpacing: "-0.025rem",
         fontWeight: "600"
       }],
-      "5xl": ["3.125rem", {
-        lineHeight: "3.5rem",
+      "4xl": ["calc(0.9rem + 2vw)", {
+        lineHeight: "2.7rem",
+        letterSpacing: "-0.025rem",
+        fontWeight: "600"
+      }],
+      "5xl": ["calc(2rem + 0.9vw)", {
+        lineHeight: "3.6rem",
         letterSpacing: "-0.1rem",
         fontWeight: "700"
       }],
-      "6xl": ["3.75rem", {
+      "6xl": ["calc(2.25rem + 1.2vw)", {
         letterSpacing: "-0.1rem",
         fontWeight: "800",
-        lineHeight: "5rem"
+        lineHeight: "calc(2.2rem + 2.3vw)"
       }]
     },
     screens: {

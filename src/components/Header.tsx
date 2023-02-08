@@ -4,13 +4,13 @@ import Button from "./shared/Button";
 
 export default function Header() {
   return (
-    <header className="fixed w-full py-6 bg-primary z-20 whitespace-nowrap">
-      <div className="container flex justify-between items-center">
-        <Link className="block uppercase text-white font-bold text-xl" href="/">
+    <header className="fixed w-full py-4 md:py-6 bg-primary z-20 whitespace-nowrap">
+      <div className="container flex justify-center md:justify-between items-center">
+        <Link className="block uppercase text-white font-bold sm:font-bold text-base sm:text-xl" href="/">
           Crypto Fin
         </Link>
-        <nav>
-          <ul className="flex justify-center gap-8 text-white text-sm">
+        <nav className="hidden md:block">
+          <ul className="flex justify-center gap-x-6 lg:gap-x-8 text-white text-sm">
             <li>
               <Link href="#">
                 Product <ChevronDown className="w-2 h-2 inline ml-2 mb-[2px]" />
@@ -30,8 +30,8 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <div>
-          <Link className="text-white text-sm mr-12" href="/sign-in">
+        <div className="hidden md:block">
+          <Link className="text-white text-sm mr-6 lg:mr-12" href="/sign-in">
             Sign In
           </Link>
           <Button href="#" bgColor="orange">
@@ -39,9 +39,59 @@ export default function Header() {
           </Button>
         </div>
       </div>
+      <button className="md:hidden absolute right-2 top-3 bg-primary">
+        <HamburgerMenu />
+      </button>
     </header>
   );
 }
+
+const HamburgerMenu = (props: SVGAttributes<SVGSVGElement>) => (
+  <svg width="38px" height="38px" viewBox="0 0 24 24" {...props}>
+    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+      <g id="Menu">
+        <rect
+          id="Rectangle"
+          fillRule="nonzero"
+          x="0"
+          y="0"
+          width="24"
+          height="24"
+        ></rect>
+        <line
+          x1="5"
+          y1="7"
+          x2="19"
+          y2="7"
+          id="Path"
+          stroke="#fff"
+          strokeWidth="2"
+          strokeLinecap="round"
+        ></line>
+        <line
+          x1="5"
+          y1="17"
+          x2="19"
+          y2="17"
+          id="Path"
+          stroke="#fff"
+          strokeWidth="2"
+          strokeLinecap="round"
+        ></line>
+        <line
+          x1="5"
+          y1="12"
+          x2="19"
+          y2="12"
+          id="Path"
+          stroke="#fff"
+          strokeWidth="2"
+          strokeLinecap="round"
+        ></line>
+      </g>
+    </g>
+  </svg>
+);
 
 const ChevronDown = (props: SVGAttributes<SVGSVGElement>) => (
   <svg width="0" height="0" viewBox="0 0 24 24" fill="currentColor" {...props}>

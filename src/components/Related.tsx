@@ -10,18 +10,18 @@ import ProtonetLogo from "@/images/related_companies/protonet-svgrepo-com.svg";
 
 export default function Related() {
   return (
-    <section className="px-20 text-center mt-[4.75rem]">
-      <h2 className="text-2xl">
+    <section className="px-3 md:px-20 text-center mt-14 md:mt-[4.75rem]">
+      <h2 className="text-sm sm:text-lg md:text-2xl font-[600]">
         Over 32k+ software businesses growing with Crypto Fin.
       </h2>
-      <div className="mt-9 h-8 gap-x-5 flex justify-between items-center overflow-hidden">
-        <Image src={OpenZeppelinLogo} width="136" alt="openzeppelin" />
-        <Image src={OracleLogo} width="136" alt="oracle" />
-        <Image src={MorpheusLogo} width="136" alt="morpheus" />
-        <Image src={SamsungLogo} width="136" alt="samsung" />
-        <Image src={MondayLogo} width="136" alt="monday" />
-        <Image src={SegmentLogo} width="136" alt="segment" />
-        <Image src={ProtonetLogo} width="136" alt="protonet" />
+      <div className="mt-5 md:mt-9 h-8 gap-x-10 flex justify-between items-center overflow-hidden">
+        <Image className="w-[90px] md:w-[125px] xl:w-[136px]" src={OpenZeppelinLogo} alt="openzeppelin" />
+        <Image className="w-[90px] md:w-[125px] xl:w-[136px]" src={OracleLogo} alt="oracle" />
+        <Image className="w-[90px] md:w-[125px] xl:w-[136px]" src={MorpheusLogo} alt="morpheus" />
+        <Image className="w-[90px] md:w-[125px] xl:w-[136px]" src={SamsungLogo} alt="samsung" />
+        <Image className="w-[90px] md:w-[125px] xl:w-[136px]" src={MondayLogo} alt="monday" />
+        <Image className="w-[90px] md:w-[125px] xl:w-[136px]" src={SegmentLogo} alt="segment" />
+        <Image className="w-[90px] md:w-[125px] xl:w-[136px]" src={ProtonetLogo} alt="protonet" />
       </div>
     </section>
   );

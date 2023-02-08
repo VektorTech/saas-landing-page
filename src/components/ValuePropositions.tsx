@@ -2,14 +2,14 @@ import Button from "./shared/Button";
 
 export default function ValuePropositions() {
   return (
-    <section className="container flex gap-x-8">
+    <section className="container flex flex-col lg:flex-row gap-8">
       <article
         className={[
-          "text-center bg-white rounded-3xl py-10 px-14 overflow-hidden",
+          "text-center bg-white rounded-3xl py-10 px-5 md:px-14 overflow-hidden",
           "shadow-[0_141px_113px_0_#00000007,0_91px_66px_0_#00000005,0_55px_36px_0_#00000004,0_28px_18px_0_#00000004,0_12px_9px_0_#00000003,0_3px_4px_0_#00000002]",
         ].join(" ")}
       >
-        <h2 className="font-extrabold tracking-tight text-[2.625rem] leading-[3rem]">
+        <h2 className="font-extrabold tracking-tight text-3xl md:text-[2.625rem] leading-[2rem] md:leading-[3rem]">
           Outward clothes promise at gravity.
         </h2>
         <p className="mt-5 text-base text-[#64607D]">
@@ -23,11 +23,11 @@ export default function ValuePropositions() {
 
       <article
         className={[
-          "text-center bg-white rounded-3xl py-10 px-14 overflow-hidden",
+          "text-center bg-white rounded-3xl py-10 px-5 md:px-14 overflow-hidden",
           "shadow-[0_141px_113px_0_#00000007,0_91px_66px_0_#00000005,0_55px_36px_0_#00000004,0_28px_18px_0_#00000004,0_12px_9px_0_#00000003,0_3px_4px_0_#00000002]",
         ].join(" ")}
       >
-        <h2 className="font-extrabold tracking-tight text-[2.625rem] leading-[3rem]">
+        <h2 className="font-extrabold tracking-tight text-3xl md:text-[2.625rem] leading-[2rem] md:leading-[3rem]">
           Sufficient particular impossible.
         </h2>
         <p className="mt-5 text-base text-[#64607D]">

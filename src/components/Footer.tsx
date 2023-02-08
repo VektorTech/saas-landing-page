@@ -3,9 +3,9 @@ import Button from "./shared/Button";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-dark text-white pt-20 mt-40">
+    <footer className="bg-primary-dark text-white pt-10 md:pt-20 mt-20 md:mt-40">
       <section className="container mb-24 text-center">
-        <h2 className="text-5xl font-medium leading-[4.5rem] tracking-normal">
+        <h2 className="text-3xl md:text-5xl font-medium leading-[3.6rem] md:leading-[4.5rem] tracking-normal">
           Join millions of <br />
           creative people with Crypto Fin
         </h2>
@@ -19,7 +19,7 @@ export default function Footer() {
         </Button>
       </section>
       <hr className="bg-[#404444] h-[0.0625rem] border-none" />
-      <section className="container flex justify-between gap-x-16 pt-10 pb-28">
+      <section className="container flex flex-col md:flex-row justify-between gap-y-20 md:gap-y-0 text-center md:text-left gap-x-16 pt-10 pb-28">
         <article className="grow">
           <h3 className="text-xl uppercase font-extrabold">Crypto Fin</h3>
           <p className="text-[#ffffff66] text-base mt-9 max-w-lg">
@@ -81,12 +81,12 @@ export default function Footer() {
         </nav>
       </section>
       <hr className="bg-[#404444] h-[0.0625rem] border-none" />
-      <section className="container py-10 flex justify-between">
+      <section className="container py-10 flex flex-col lg:flex-row text-center justify-between">
         <p className="text-xs">
           &copy; {new Date().getFullYear()} Crypto Fin. All rights reserved.
           &mdash; Privacy Policy &bull; Terms of Services
         </p>
-        <p className="text-xs">
+        <p className="text-xs mt-2 lg:mt-0">
           Supported by <strong>Microsoft Startup</strong>
         </p>
       </section>

@@ -6,10 +6,10 @@ import { SVGAttributes } from "react";
 
 export default function Feature() {
   return (
-    <section className="bg-primary text-white mt-28 pt-36 pb-28" id="feature-1">
+    <section className="bg-primary text-white mt-20 lg:mt-28 pt-20 pb-16 lg:pt-36 lg:pb-28" id="feature-1">
       <div className="container">
-        <header className="flex justify-between items-center gap-20">
-          <h2 className="text-[2.75rem] leading-[3.125rem] tracking-tight font-extrabold">
+        <header className="flex justify-between items-center flex-col lg:flex-row text-center lg:text-left gap-10 lg:gap-20">
+          <h2 className="text-2xl sm:text-3xl md:text-[calc(1.5rem_+_1.04vw)] leading-[2.6rem] md:leading-[3.125rem] tracking-tight font-extrabold">
             Yet preference connection unpleasant
             <br />
             yet melancholy but end appearance
@@ -19,39 +19,39 @@ export default function Feature() {
           </Button>
         </header>
 
-        <div className="mt-10 flex gap-x-5 justify-between py-8">
-          <div className="max-w-[27.1875rem]">
-            <article className="flex items-start gap-x-7">
-              <div className="w-24 h-24 shrink-0 relative before:content-[''] before:block before:absolute before:w-full before:h-full before:bg-primary-dark before:opacity-20 before:rounded-full flex justify-center items-center text-5xl">
+        <div className="mt-10 flex flex-col-reverse lg:flex-row gap-x-5 justify-between py-8">
+          <div className="lg:max-w-[27.1875rem] mt-10 md:mt-20 lg:mt-0">
+            <article className="flex items-start gap-x-3 md:gap-x-7">
+              <div className="w-15 h-15 md:w-24 md:h-24 shrink-0 relative before:content-[''] before:block before:absolute before:w-full before:h-full before:bg-primary-dark before:opacity-20 before:rounded-full flex justify-center items-center text-4xl md:text-5xl">
                 <span className="relative z-[1] text-[#E8F2FF]">1</span>
               </div>
               <div className="pt-2">
-                <h3 className="text-3xl text-[#E8F2FF]">
+                <h3 className="text-lg md:text-3xl font-bold text-[#E8F2FF]">
                   First Working Process
                 </h3>
-                <p className="text-blue-250 text-lg mt-2 leading-8">
+                <p className="text-blue-250 text-sm md:text-lg mt-2 leading-8">
                   Blessing it ladyship on sensible judgment settling outweigh.
                 </p>
               </div>
             </article>
-            <article className="flex items-start gap-x-7 mt-9">
-              <div className="w-24 h-24 shrink-0 relative before:content-[''] before:block before:absolute before:w-full before:h-full before:bg-primary-dark before:opacity-20 before:rounded-full flex justify-center items-center text-5xl">
+            <article className="flex items-start gap-x-3 md:gap-x-7 mt-9">
+              <div className="w-15 h-15 md:w-24 md:h-24 shrink-0 relative before:content-[''] before:block before:absolute before:w-full before:h-full before:bg-primary-dark before:opacity-20 before:rounded-full flex justify-center items-center text-4xl md:text-5xl">
                 <span className="relative z-[1] text-[#E8F2FF]">2</span>
               </div>
               <div className="pt-2">
-                <h3 className="text-3xl text-[#E8F2FF]">Dedicated Team</h3>
-                <p className="text-blue-250 text-lg mt-2 leading-8">
+                <h3 className="text-lg md:text-3xl font-bold text-[#E8F2FF]">Dedicated Team</h3>
+                <p className="text-blue-250 text-sm md:text-lg mt-2 leading-8">
                   Warmly little before cousin sussex entire men set.
                 </p>
               </div>
             </article>
-            <article className="flex items-start gap-x-7 mt-9">
-              <div className="w-24 h-24 shrink-0 relative before:content-[''] before:block before:absolute before:w-full before:h-full before:bg-primary-dark before:opacity-20 before:rounded-full flex justify-center items-center text-5xl">
+            <article className="flex items-start gap-x-3 md:gap-x-7 mt-9">
+              <div className="w-15 h-15 md:w-24 md:h-24 shrink-0 relative before:content-[''] before:block before:absolute before:w-full before:h-full before:bg-primary-dark before:opacity-20 before:rounded-full flex justify-center items-center text-4xl md:text-5xl">
                 <span className="relative z-[1] text-[#E8F2FF]">3</span>
               </div>
               <div className="pt-2">
-                <h3 className="text-3xl text-[#E8F2FF]">24/7 Hours Support</h3>
-                <p className="text-blue-250 text-lg mt-2 leading-8">
+                <h3 className="text-lg md:text-3xl font-bold text-[#E8F2FF]">24/7 Hours Support</h3>
+                <p className="text-blue-250 text-sm md:text-lg mt-2 leading-8">
                   And excellence partiality estimating terminated day
                   everything.
                 </p>
@@ -60,25 +60,25 @@ export default function Feature() {
           </div>
           <div className="relative">
             <Image
-              className="relative z-10"
+              className="relative z-10 w-full"
               src={VideoPoster}
               width={VideoPoster.width}
               height={VideoPoster.height}
               alt=""
             />
-            <button className="z-10 flex absolute bg-white text-accent rounded-full w-24 h-24 top-0 mt-[29.44%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <button className="z-10 flex absolute bg-white text-accent rounded-full w-14 h-14 md:w-24 md:h-24 top-0 mt-[29.44%] left-1/2 -translate-x-1/2 -translate-y-1/2">
               <RightArrow
-                className="m-auto pl-[5px]"
+                className="m-auto pl-[5px] w-[30px] h-[30px] md:w-[45px] md:h-[40px]"
                 width="45px"
                 height="45px"
               />
             </button>
 
-            <div className="w-[148px] h-[148px] text-[#C4C4C4] opacity-30 absolute -top-[2.4rem] -left-[2.6rem] z-10">
+            <div className="pl-[20%] pt-[20%] text-[#C4C4C4] opacity-30 absolute -top-[43%] -left-[25.5%] z-10">
               <svg
                 width="0"
                 height="0"
-                className="w-full h-full"
+                className="w-full h-full absolute"
                 viewBox="0 0 100 100"
               >
                 {[...Array(49)].map((_, i) => (
@@ -95,7 +95,7 @@ export default function Feature() {
             </div>
 
             <svg
-              className="absolute -right-5 top-0 mt-[48%] z-0"
+              className="absolute -right-2 md:-right-5 top-0 mt-[52%] md:mt-[48%] z-0 w-[32px] h-[55px] md:w-[55px] md:h-[106px]"
               width="55"
               height="106"
               viewBox="0 0 55 106"
@@ -105,7 +105,7 @@ export default function Feature() {
             </svg>
 
             <svg
-              className="absolute -right-8 -top-10 z-10"
+              className="absolute -right-3 md:-right-8 -top-5 md:-top-10 z-10 w-[28px] h-[30px] md:w-[56px] md:h-[58px]"
               width="56"
               height="58"
               viewBox="0 0 56 58"
