@@ -9,7 +9,7 @@ export default function Hero() {
         <div
           className={[
             "pointer-events-none full-size -z-[1]",
-            "opacity-40 sm:opacity-80 md:opacity-100",
+            "opacity-30 sm:opacity-80 md:opacity-100",
             "bg-[radial-gradient(circle_at_8%_25%,#10ACDD45_0%,transparent_35%),_radial-gradient(circle_at_75%_75%,#10ACDD45_0%,transparent_55%)]",
             "md:bg-[radial-gradient(circle_at_12%_57%,#10ACDD45_0%,transparent_22%),_radial-gradient(circle_at_65%_75%,#10ACDD45_0%,transparent_23%)]",
           ].join(" ")}
@@ -113,7 +113,7 @@ export default function Hero() {
             <br />
             has never been easier
           </h2>
-          <p className="text-white text-sm md:text-base lg:text-xl mt-8">
+          <p className="text-white text-sm md:text-base !font-light lg:text-xl mt-8">
             End-to-end payments and financial management in a single solution.
             Meet
             <br />
@@ -123,7 +123,7 @@ export default function Hero() {
             <Button href="#" bgColor="orange" rounded="rounded-full">
               Get Started
             </Button>
-            <button className="text-white text-base flex items-center gap-3">
+            <button className="!font-light text-white text-base flex items-center gap-3">
               <div className="h-15 w-15 hover:scale-75 transition-transform shrink-0 rounded-full bg-green text-white text-base flex justify-center items-center">
                 <svg
                   className="pl-[2px] w-[1.88rem] h-[1.88rem]"
