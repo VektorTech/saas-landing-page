@@ -15,4 +15,4 @@ A pixel-perfect website landing page made with NextJS for SaaS, from figma templ
 
 ## Credit
 
-Design by (AR SHAKIR)[https://arshakir.com]
+Design by [AR SHAKIR](https://arshakir.com)
