@@ -106,7 +106,7 @@ export default function Footer() {
       </section>
       <hr className="bg-[#404444] h-[0.0625rem] border-none" />
       <section className="container py-10 flex flex-col lg:flex-row text-center justify-between">
-        <p className="text-xs">
+        <p className="text-xs !font-normal">
           &copy; {new Date().getFullYear()} Crypto Fin. All rights reserved.
           &mdash;
           {" "}
@@ -118,8 +118,8 @@ export default function Footer() {
             Terms of Services
           </Link>
         </p>
-        <p className="text-xs mt-2 lg:mt-0">
-          Supported by <strong>Microsoft Startup</strong>
+        <p className="text-xs mt-2 lg:mt-0 font-normal">
+          Supported by <strong className="font-bold">Microsoft Startup</strong>
         </p>
       </section>
     </footer>
