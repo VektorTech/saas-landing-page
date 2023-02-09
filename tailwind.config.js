@@ -43,34 +43,31 @@ module.exports = {
     fontFamily: {
       sans: ["var(--font-manrope)", ...defaultTheme.fontFamily.sans]
     },
-    // fontWeight: {
-
-    // },
     fontSize: {
       xs: ["0.75rem", {
         lineHeight: "1.625rem",
         letterSpacing: "0rem",
-        fontWeight: "500"
+        fontWeight: "400"
       }],
       sm: ["0.875rem", {
         lineHeight: "1.625rem",
         letterSpacing: "0rem",
-        fontWeight: "500"
+        fontWeight: "400"
       }],
       base: ["1rem", {
         lineHeight: "1.625rem",
         letterSpacing: "0rem",
-        fontWeight: "500"
+        fontWeight: "400"
       }],
       lg: ["1.125rem", {
         lineHeight: "1.625rem",
         letterSpacing: "0rem",
-        fontWeight: "500"
+        fontWeight: "400"
       }],
       xl: ["1.25rem", {
         lineHeight: "1.875rem",
         letterSpacing: "0rem",
-        fontWeight: "500"
+        fontWeight: "400"
       }],
       "2xl": ["1.375rem", {
         lineHeight: "1.875rem",
