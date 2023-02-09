@@ -1,12 +1,31 @@
+"use client";
+
+import useScrollPosition from "@/hooks/useScrollPosition";
 import Link from "next/link";
-import { SVGAttributes } from "react";
+import { SVGAttributes, useEffect, useRef } from "react";
 import Button from "./shared/Button";
 
 export default function Header() {
+  const scrollTop = useScrollPosition();
+  const isSticky = useRef(false);
+
+  useEffect(() => {
+    isSticky.current = scrollTop > innerHeight;
+  }, [scrollTop]);
+
   return (
-    <header className="fixed w-full py-4 md:py-6 bg-primary z-20 whitespace-nowrap">
+    <header
+      className={`${isSticky.current ? "fixed" : "absolute"} ${
+        isSticky.current ? "animate-slide" : ""
+      } w-full py-4 ${
+        isSticky.current ? "md:py-0" : "md:py-6"
+      } bg-primary z-20 whitespace-nowrap`}
+    >
       <div className="container flex justify-center md:justify-between items-center">
-        <Link className="block uppercase text-white font-bold sm:font-bold text-base sm:text-xl" href="/">
+        <Link
+          className="block uppercase text-white font-bold sm:font-bold text-base sm:text-xl"
+          href="/"
+        >
           Crypto Fin
         </Link>
         <nav className="hidden md:block">
@@ -34,7 +53,11 @@ export default function Header() {
           <Link className="text-white text-sm mr-6 lg:mr-12" href="/sign-in">
             Sign In
           </Link>
-          <Button href="#" bgColor="orange">
+          <Button
+            href="#"
+            bgColor="orange"
+            rounded={isSticky.current ? "rounded-0" : "rounded-lg"}
+          >
             Start Free
           </Button>
         </div>

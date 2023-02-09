@@ -29,7 +29,7 @@ export default function Feature() {
                 <h3 className="text-lg md:text-3xl font-bold text-[#E8F2FF]">
                   First Working Process
                 </h3>
-                <p className="text-blue-250 text-sm md:text-lg mt-2 leading-8">
+                <p className="text-blue-250 text-sm md:text-lg mt-2 leading-5 md:leading-8">
                   Blessing it ladyship on sensible judgment settling outweigh.
                 </p>
               </div>
@@ -40,7 +40,7 @@ export default function Feature() {
               </div>
               <div className="pt-2">
                 <h3 className="text-lg md:text-3xl font-bold text-[#E8F2FF]">Dedicated Team</h3>
-                <p className="text-blue-250 text-sm md:text-lg mt-2 leading-8">
+                <p className="text-blue-250 text-sm md:text-lg mt-2 leading-5 md:leading-8">
                   Warmly little before cousin sussex entire men set.
                 </p>
               </div>
@@ -51,7 +51,7 @@ export default function Feature() {
               </div>
               <div className="pt-2">
                 <h3 className="text-lg md:text-3xl font-bold text-[#E8F2FF]">24/7 Hours Support</h3>
-                <p className="text-blue-250 text-sm md:text-lg mt-2 leading-8">
+                <p className="text-blue-250 text-sm md:text-lg mt-2 leading-5 md:leading-8">
                   And excellence partiality estimating terminated day
                   everything.
                 </p>
@@ -66,7 +66,7 @@ export default function Feature() {
               height={VideoPoster.height}
               alt=""
             />
-            <button className="z-10 flex absolute bg-white text-accent rounded-full w-14 h-14 md:w-24 md:h-24 top-0 mt-[29.44%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <button className="hover:scale-75 transition-transform z-10 flex absolute bg-white text-accent rounded-full w-14 h-14 md:w-24 md:h-24 top-0 mt-[29.44%] left-1/2 -translate-x-1/2 -translate-y-1/2">
               <RightArrow
                 className="m-auto pl-[5px] w-[30px] h-[30px] md:w-[45px] md:h-[40px]"
                 width="45px"

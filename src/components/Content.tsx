@@ -12,7 +12,7 @@ import Graphic3 from "@/images/content/graphic3.svg";
 export default function Content() {
   return (
     <section className="pt-14 container">
-      <article className="grid lg:grid-cols-2 gap-x-12 text-center md:text-left overflow-x-hidden">
+      <article className="grid lg:grid-cols-2 gap-x-12 text-center md:text-left overflow-hidden">
         <div className="px-2 sm:px-8 relative">
           <div className="[clip-path:polygon(100%_13%,100%_93%,93%_100%,0_100%,0_13%)] h-full -z-10 absolute w-[93%] bg-[#EBECE8]"></div>
           <Image
@@ -23,22 +23,22 @@ export default function Content() {
             alt="woman"
           />
           <Image
-            className="absolute left-0 top-[55%]"
+            className="absolute left-0 top-[55%] hover:animate-shake"
             alt=""
             src={Graphic0}
           />
           <Image
-            className="absolute left-[23%] top-[78%]"
+            className="absolute left-[23%] top-[78%] hover:animate-shake"
             alt=""
             src={Graphic1}
           />
           <Image
-            className="absolute right-[13%] top-[87%] sm:top-[80%]"
+            className="absolute right-[13%] top-[87%] sm:top-[80%] hover:animate-shake"
             alt=""
             src={Graphic2}
           />
           <Image
-            className="absolute right-0 lg:-right-[3%] top-[67%] sm:top-[57%]"
+            className="absolute right-0 lg:-right-[3%] top-[67%] sm:top-[57%] hover:animate-shake"
             alt=""
             src={Graphic3}
           />

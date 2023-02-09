@@ -124,7 +124,7 @@ export default function Hero() {
               Get Started
             </Button>
             <button className="text-white text-base flex items-center gap-3">
-              <div className="h-15 w-15 shrink-0 rounded-full bg-green text-white text-base flex justify-center items-center">
+              <div className="h-15 w-15 hover:scale-75 transition-transform shrink-0 rounded-full bg-green text-white text-base flex justify-center items-center">
                 <svg
                   className="pl-[2px] w-[1.88rem] h-[1.88rem]"
                   width="0"
