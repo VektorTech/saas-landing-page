@@ -1,4 +1,4 @@
-import Button from "./shared/Button";
+import Button from "./Button";
 import BannerImage from "./BannerImage";
 
 export default function Hero() {

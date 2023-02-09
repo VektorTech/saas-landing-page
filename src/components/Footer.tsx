@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Button from "./shared/Button";
+import Button from "./Button";
 
 export default function Footer() {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "./shared/Button";
+import Button from "./Button";
 
 import VideoPoster from "@/images/video-poster.png";
 import { SVGAttributes } from "react";

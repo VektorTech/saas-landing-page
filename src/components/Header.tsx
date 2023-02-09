@@ -3,7 +3,7 @@
 import useScrollPosition from "@/hooks/useScrollPosition";
 import Link from "next/link";
 import { SVGAttributes, useEffect, useRef } from "react";
-import Button from "./shared/Button";
+import Button from "./Button";
 
 export default function Header() {
   const scrollTop = useScrollPosition();

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "./shared/Button";
+import Button from "./Button";
 
 import StockImg1 from "@/images/woman.png";
 import CardGraphic from "@/images/card-graphic.svg";
