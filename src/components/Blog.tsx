@@ -15,14 +15,14 @@ export default function Blog() {
       <Link href="/">
         <article className="bg-white flex flex-col lg:flex-row mt-10 md:mt-20">
           <section className="pt-4 md:pt-6 px-3 md:px-8 pb-10 lg:pb-0 lg:w-[60%]">
-            <p className="uppercase text-sm md:text-base font-bold md:font-bold">
+            <p className="uppercase text-sm md:text-base !font-black">
               best practices
             </p>
-            <h3 className="text-lg sm:text-xl md:text-[1.82rem] font-bold md:font-bold md:leading-[2.2rem] tracking-tight mt-3 max-w-[80%]">
+            <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] tracking-tighter mt-3 max-w-[80%]">
               In design active temper be uneasy. Thirty for remove plenty
               regard.
             </h3>
-            <p className="mt-16 text-base font-semibold">
+            <p className="mt-16 text-base font-extrabold">
               Read More <RightArrow className="inline ml-2" />
             </p>
           </section>
@@ -39,11 +39,11 @@ export default function Blog() {
       <div className="grid lg:grid-cols-3 gap-x-7 space-y-7 lg:space-y-0 mt-7">
         <Link href="/">
           <article className="bg-white">
-            <section className="pt-4 md:pt-6 px-3 md:px-8 h-[14.5rem] overflow-hidden">
-              <p className="uppercase text-sm md:text-base font-bold md:font-bold">
+            <section className="pt-4 md:pt-6 px-3 md:px-8 h-56 overflow-hidden">
+              <p className="uppercase text-sm md:text-base !font-black">
                 best practices
               </p>
-              <h3 className="text-lg sm:text-xl md:text-[1.82rem] font-bold md:font-bold md:leading-[2.2rem] tracking-tight mt-3">
+              <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] tracking-tighter mt-3">
                 Partiality on or continuing particular principles as.
               </h3>
             </section>
@@ -59,11 +59,11 @@ export default function Blog() {
 
         <Link href="/">
           <article className="bg-white">
-            <section className="pt-4 md:pt-6 px-3 md:px-8 h-[14.5rem] overflow-hidden">
-              <p className="uppercase text-sm md:text-base font-bold md:font-bold">
+            <section className="pt-4 md:pt-6 px-3 md:px-8 h-56 overflow-hidden">
+              <p className="uppercase text-sm md:text-base !font-black">
                 best practices
               </p>
-              <h3 className="text-lg sm:text-xl md:text-[1.82rem] font-bold md:font-bold md:leading-[2.2rem] tracking-tight mt-3">
+              <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] tracking-tighter mt-3">
                 Village did removed enjoyed explain
               </h3>
             </section>
@@ -79,11 +79,11 @@ export default function Blog() {
 
         <Link href="/" className="">
           <article className="bg-white">
-            <section className="pt-4 md:pt-6 px-3 md:px-8 h-[14.5rem] overflow-hidden">
-              <p className="uppercase text-sm md:text-base font-bold md:font-bold">
+            <section className="pt-4 md:pt-6 px-3 md:px-8 h-56 overflow-hidden">
+              <p className="uppercase text-sm md:text-base !font-black">
                 best practices
               </p>
-              <h3 className="text-lg sm:text-xl md:text-[1.82rem] font-bold md:font-bold md:leading-[2.2rem] tracking-tight mt-3">
+              <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] tracking-tighter mt-3">
                 Wise busy past both park when an ye no. Nay likely her length.
               </h3>
             </section>

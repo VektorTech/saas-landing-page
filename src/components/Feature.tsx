@@ -74,7 +74,7 @@ export default function Feature() {
               />
             </button>
 
-            <div className="pl-[20%] pt-[20%] text-[#C4C4C4] opacity-30 absolute -top-[43%] -left-[25.5%] z-10">
+            <div className="pl-[20%] pt-[20%] text-[#C4C4C4] opacity-50 absolute -top-[43%] -left-[25.5%] z-10">
               <svg
                 width="0"
                 height="0"

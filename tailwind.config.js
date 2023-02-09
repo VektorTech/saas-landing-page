@@ -43,31 +43,34 @@ module.exports = {
     fontFamily: {
       sans: ["var(--font-manrope)", ...defaultTheme.fontFamily.sans]
     },
+    // fontWeight: {
+
+    // },
     fontSize: {
       xs: ["0.75rem", {
         lineHeight: "1.625rem",
         letterSpacing: "0rem",
-        fontWeight: "400"
+        fontWeight: "500"
       }],
       sm: ["0.875rem", {
         lineHeight: "1.625rem",
         letterSpacing: "0rem",
-        fontWeight: "400"
+        fontWeight: "500"
       }],
       base: ["1rem", {
         lineHeight: "1.625rem",
         letterSpacing: "0rem",
-        fontWeight: "400"
+        fontWeight: "500"
       }],
       lg: ["1.125rem", {
         lineHeight: "1.625rem",
         letterSpacing: "0rem",
-        fontWeight: "400"
+        fontWeight: "500"
       }],
       xl: ["1.25rem", {
         lineHeight: "1.875rem",
         letterSpacing: "0rem",
-        fontWeight: "400"
+        fontWeight: "500"
       }],
       "2xl": ["1.375rem", {
         lineHeight: "1.875rem",
@@ -87,11 +90,11 @@ module.exports = {
       "5xl": ["calc(2rem + 0.9vw)", {
         lineHeight: "3.6rem",
         letterSpacing: "-0.1rem",
-        fontWeight: "700"
+        fontWeight: "800"
       }],
       "6xl": ["calc(2.25rem + 1.2vw)", {
         letterSpacing: "-0.1rem",
-        fontWeight: "800",
+        fontWeight: "700",
         lineHeight: "calc(2.2rem + 2.3vw)"
       }]
     },
@@ -99,7 +102,7 @@ module.exports = {
       sm: '36rem',
       md: '48rem',
       lg: '62rem',
-      xl: "75rem"
+      xl: "76rem"
     },
     extend: {
       animation: {

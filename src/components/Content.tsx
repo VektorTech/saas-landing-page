@@ -44,7 +44,7 @@ export default function Content() {
           />
         </div>
         <div className="flex flex-col pt-10 lg:pt-0 lg:justify-end pb-10 space-y-3 sm:space-y-7 lg:pl-5">
-          <h2 className="uppercase text-sm sm:text-base md:text-lg font-extrabold sm:font-extrabold md:font-extrabold text-primary">
+          <h2 className="uppercase text-sm sm:text-base md:text-lg !font-black text-primary">
             Our Feature
           </h2>
           <h3 className="text-3xl sm:text-5xl font-[700] ">
@@ -71,7 +71,7 @@ export default function Content() {
           <Image className="mx-auto" src={CardGraphic} alt="" />
         </div>
         <div className="col-start-1 flex flex-col pt-5 md:pt-10 pb-7 space-y-3 sm:space-y-7">
-          <h2 className="uppercase text-sm sm:text-base md:text-lg font-extrabold sm:font-extrabold md:font-extrabold text-primary">
+          <h2 className="uppercase text-sm sm:text-base md:text-lg !font-black text-primary">
             Our Feature
           </h2>
           <h3 className="text-3xl sm:text-5xl font-[700] ">

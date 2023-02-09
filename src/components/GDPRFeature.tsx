@@ -3,8 +3,8 @@ import { SVGAttributes } from "react";
 export default function GDPRFeature() {
   return (
     <section className="container mt-16 mb-12 md:mt-24 md:mb-20">
-      <div className="p-5 sm:p-8 lg:p-11 rounded-[1.2rem] flex flex-col lg:flex-row gap-x-10 xl:gap-x-14 items-center bg-white border-[#DEE1E6] border overflow-hidden">
-        <h2 className="text-[1.6rem] sm:text-[2rem] lg:text-[2.25rem] leading-[2.4rem] sm:leading-[3rem] text-center lg:text-left tracking-tight font-extrabold whitespace-nowrap">
+      <div className="p-5 sm:p-8 lg:p-11 rounded-[1.2rem] flex flex-col lg:flex-row gap-x-10 xl:gap-x-10 items-center bg-white border-[#DEE1E6] border overflow-hidden">
+        <h2 className="text-[1.6rem] sm:text-[2rem] lg:text-[2.25rem] leading-[2.4rem] sm:leading-[2.8rem] text-center lg:text-left tracking-tight font-black whitespace-nowrap">
           Germany-based <br />
           &amp; GDPR Compliant
         </h2>
@@ -13,7 +13,7 @@ export default function GDPRFeature() {
             <div className="bg-neutral-300 w-15 h-15 shrink-0 rounded-md">
               <SecureIcon className="m-auto h-full" />
             </div>
-            <p className="text-base overflow-hidden text-[#64607D] font-bold">
+            <p className="text-lg overflow-hidden text-[#64607D] font-bold">
               Data does not leave our servers
             </p>
           </div>
@@ -21,7 +21,7 @@ export default function GDPRFeature() {
             <div className="bg-neutral-300 w-15 h-15 shrink-0 rounded-md">
               <InfrastructureIcon className="m-auto h-full" />
             </div>
-            <p className="text-base overflow-hidden text-[#64607D] font-bold">
+            <p className="text-lg overflow-hidden text-[#64607D] font-bold">
               Own infrastructure
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function GDPRFeature() {
             <div className="bg-neutral-300 w-15 h-15 shrink-0 rounded-md">
               <DataCenterIcon className="m-auto h-full" />
             </div>
-            <p className="text-base overflow-hidden text-[#64607D] font-bold">
+            <p className="text-lg overflow-hidden text-[#64607D] font-bold">
               Most renowned data centers
             </p>
           </div>
