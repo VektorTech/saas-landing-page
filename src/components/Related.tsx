@@ -39,7 +39,7 @@ export default function Related() {
                 (scrollTop + innerHeightRef.current))
             }px)`,
           }}
-          className="gap-x-10 flex justify-between items-center h-full"
+          className="gap-x-[7%] flex justify-between items-center h-full"
         >
           <Image
             className="w-[90px] md:w-[125px] xl:w-[136px]"

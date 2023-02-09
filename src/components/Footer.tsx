@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary-dark text-white pt-10 md:pt-20 mt-20 md:mt-40">
       <section className="container mb-24 text-center">
-        <h2 className="text-3xl md:text-5xl font-medium leading-[3.6rem] md:leading-[4.5rem] tracking-normal">
+        <h2 className="text-3xl md:text-5xl !font-medium leading-[3.6rem] md:leading-[4.5rem] !tracking-normal">
           Join millions of <br />
           creative people with Crypto Fin
         </h2>

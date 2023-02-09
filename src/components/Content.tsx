@@ -70,7 +70,7 @@ export default function Content() {
         <div className="relative lg:col-start-2 lg:row-end-2 overflow-hidden">
           <Image className="mx-auto" src={CardGraphic} alt="" />
         </div>
-        <div className="col-start-1 flex flex-col pt-5 md:pt-20 pb-7 space-y-3 sm:space-y-7">
+        <div className="col-start-1 flex flex-col pt-5 md:pt-10 pb-7 space-y-3 sm:space-y-7">
           <h2 className="uppercase text-sm sm:text-base md:text-lg font-extrabold sm:font-extrabold md:font-extrabold text-primary">
             Our Feature
           </h2>
