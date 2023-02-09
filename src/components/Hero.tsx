@@ -113,7 +113,7 @@ export default function Hero() {
             <br />
             has never been easier
           </h2>
-          <p className="text-white text-sm md:text-base !font-light lg:text-xl mt-8">
+          <p className="text-white text-sm md:text-base !font-light lg:text-xl mt-8 px-10 lg:px-0">
             End-to-end payments and financial management in a single solution.
             Meet
             <br />

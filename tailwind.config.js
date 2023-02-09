@@ -10,7 +10,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        DEFAULT: "0.75rem"
+        DEFAULT: "0.94rem"
       }
     },
     colors: {
@@ -104,7 +104,8 @@ module.exports = {
     extend: {
       animation: {
         shake: "shake 1s cubic-bezier(.36,.07,.19,.97) both",
-        slide: "slide 0.7s"
+        slide: "slide 0.7s",
+        "fade-in": "fade-in 0.7s"
       },
       colors: {
         green: {

@@ -1,11 +1,15 @@
 "use client";
 
-import useScrollPosition from "@/hooks/useScrollPosition";
+import { SVGAttributes, useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { SVGAttributes, useEffect, useRef } from "react";
+
+import useScrollPosition from "@/hooks/useScrollPosition";
 import Button from "./Button";
+import Times from "@/images/times-x.svg";
+import Image from "next/image";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   const scrollTop = useScrollPosition();
   const isSticky = useRef(false);
 
@@ -14,22 +18,73 @@ export default function Header() {
   }, [scrollTop]);
 
   return (
-    <header
-      className={`${isSticky.current ? "fixed" : "absolute"} ${
-        isSticky.current ? "animate-slide" : ""
-      } w-full py-4 ${
-        isSticky.current ? "md:py-0" : "md:py-6"
-      } bg-primary z-20 whitespace-nowrap`}
-    >
-      <div className="container flex justify-center md:justify-between items-center">
-        <Link
-          className="block uppercase text-white font-bold sm:font-bold text-base sm:text-xl"
-          href="/"
+    <>
+      <header
+        className={`${isSticky.current ? "fixed" : "absolute"} ${
+          isSticky.current ? "animate-slide" : ""
+        } w-full py-4 ${
+          isSticky.current ? "md:py-0" : "md:py-6"
+        } bg-primary z-20 whitespace-nowrap`}
+      >
+        <div className="container flex justify-between items-center">
+          <Link
+            className="block uppercase text-white !font-black text-base sm:text-xl"
+            href="/"
+          >
+            Crypto Fin
+          </Link>
+          <nav className="hidden md:block">
+            <ul className="flex justify-center gap-x-6 lg:gap-x-8 text-white text-sm">
+              <li>
+                <Link href="#">
+                  Product{" "}
+                  <ChevronDown className="w-2 h-2 inline ml-2 mb-[2px]" />
+                </Link>
+              </li>
+              <li>
+                <Link href="#">
+                  Template{" "}
+                  <ChevronDown className="w-2 h-2 inline ml-2 mb-[2px]" />
+                </Link>
+              </li>
+              <li>
+                <Link href="#">Blog</Link>
+              </li>
+              <li>
+                <Link href="#">Pricing</Link>
+              </li>
+            </ul>
+          </nav>
+          <div className="hidden md:block">
+            <Link className="text-white text-sm mr-6 lg:mr-12" href="/sign-in">
+              Sign In
+            </Link>
+            <Button
+              href="#"
+              bgColor="orange"
+              rounded={isSticky.current ? "rounded-0" : "rounded-lg"}
+            >
+              Start Free
+            </Button>
+          </div>
+        </div>
+        <button
+          onClick={() => setIsOpen(true)}
+          className="md:hidden absolute right-2 top-3 bg-primary"
         >
-          Crypto Fin
-        </Link>
-        <nav className="hidden md:block">
-          <ul className="flex justify-center gap-x-6 lg:gap-x-8 text-white text-sm">
+          <HamburgerMenu />
+        </button>
+      </header>
+
+      {isOpen && (
+        <nav className="block animate-fade-in md:hidden w-full pb-20 fixed top-0 z-20 bg-primary">
+          <button
+            onClick={() => setIsOpen(false)}
+            className="text-white text-xl float-right mt-5 mr-4"
+          >
+            <Image src={Times} width={20} height={20} alt="" />
+          </button>
+          <ul className="mt-20 flex flex-col gap-y-8 text-white text-xl text-center justify-center items-center">
             <li>
               <Link href="#">
                 Product <ChevronDown className="w-2 h-2 inline ml-2 mb-[2px]" />
@@ -47,25 +102,18 @@ export default function Header() {
             <li>
               <Link href="#">Pricing</Link>
             </li>
+            <li>
+              <Link href="#">Sign In</Link>
+            </li>
+            <li>
+              <Button href="#" bgColor="orange" rounded="rounded-lg">
+                Start Free
+              </Button>
+            </li>
           </ul>
         </nav>
-        <div className="hidden md:block">
-          <Link className="text-white text-sm mr-6 lg:mr-12" href="/sign-in">
-            Sign In
-          </Link>
-          <Button
-            href="#"
-            bgColor="orange"
-            rounded={isSticky.current ? "rounded-0" : "rounded-lg"}
-          >
-            Start Free
-          </Button>
-        </div>
-      </div>
-      <button className="md:hidden absolute right-2 top-3 bg-primary">
-        <HamburgerMenu />
-      </button>
-    </header>
+      )}
+    </>
   );
 }
 

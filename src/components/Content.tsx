@@ -12,7 +12,7 @@ import Graphic3 from "@/images/content/graphic3.svg";
 export default function Content() {
   return (
     <section className="pt-14 container">
-      <article className="grid lg:grid-cols-2 gap-x-12 text-center md:text-left overflow-hidden">
+      <article className="grid lg:grid-cols-2 gap-x-12 text-left overflow-hidden">
         <div className="px-2 sm:px-8 relative">
           <div className="[clip-path:polygon(100%_13%,100%_93%,93%_100%,0_100%,0_13%)] h-full -z-10 absolute w-[93%] bg-[#EBECE8]"></div>
           <Image
@@ -50,7 +50,7 @@ export default function Content() {
           <h3 className="text-3xl sm:text-5xl font-[700] ">
             All of your portfolios are linked to your Crypto Fin account
           </h3>
-          <p className="text-sm sm:text-lg !text-normal text-[#757095] ">
+          <p className="text-sm sm:text-lg !font-[500] text-[#757095] ">
             Why kept very ever home mrs. Considered sympathize ten uncommonly
             occasional assistance sufficient not. Letter of on become he tended
             active enable to.
@@ -59,14 +59,14 @@ export default function Content() {
             href="#"
             rounded="rounded-md"
             bgColor="primary"
-            className="md:self-start"
+            className="self-start"
           >
             Get Started
           </Button>
         </div>
       </article>
 
-      <article className="grid lg:grid-cols-2 gap-x-12 mt-5 md:mt-20 text-center md:text-left">
+      <article className="grid lg:grid-cols-2 gap-x-12 mt-5 md:mt-20 text-left">
         <div className="relative lg:col-start-2 lg:row-end-2 overflow-hidden">
           <Image className="mx-auto" src={CardGraphic} alt="" />
         </div>
@@ -77,7 +77,7 @@ export default function Content() {
           <h3 className="text-3xl sm:text-5xl font-[700] ">
             All payments can be managed from one account
           </h3>
-          <p className="text-sm sm:text-lg !text-normal text-[#757095] ">
+          <p className="text-sm sm:text-lg !font-[500] text-[#757095] ">
             Why kept very ever home mrs. Considered sympathize ten uncommonly
             occasional assistance sufficient not. Letter of on become he tended
             active enable to.
@@ -86,7 +86,7 @@ export default function Content() {
             href="#"
             rounded="rounded-md"
             bgColor="primary"
-            className="md:self-start"
+            className="self-start"
           >
             Get Started
           </Button>
