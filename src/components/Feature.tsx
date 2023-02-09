@@ -58,7 +58,7 @@ export default function Feature() {
               </div>
             </article>
           </div>
-          <div className="relative">
+          <div className="relative h-[58.9%]">
             <Image
               className="relative z-10 w-full"
               src={VideoPoster}
