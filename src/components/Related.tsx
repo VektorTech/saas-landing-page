@@ -11,15 +11,15 @@ import MondayLogo from "@/images/related_companies/monday-svgrepo-com.svg";
 import SegmentLogo from "@/images/related_companies/segment-svgrepo-com.svg";
 import ProtonetLogo from "@/images/related_companies/protonet-svgrepo-com.svg";
 
-import useIntersectionObserver from "@/hooks/useIntersectionObserver";
 import useScrollPosition from "@/hooks/useScrollPosition";
 
 export default function Related() {
   const ref = useRef<HTMLDivElement | null>(null);
-  const entry = useIntersectionObserver(ref, {});
-  const isVisible = Number(!!entry?.isIntersecting);
   const scrollTop = useScrollPosition();
   const innerHeightRef = useRef(0);
+  const isVisible = Number(
+    (ref.current?.offsetTop ?? Infinity) < scrollTop + innerHeightRef.current
+  );
 
   useEffect(() => {
     innerHeightRef.current = innerHeight;
@@ -95,21 +95,6 @@ export default function Related() {
             className="w-[90px] md:w-[125px] xl:w-[136px]"
             src={SamsungLogo}
             alt="samsung"
-          />
-          <Image
-            className="w-[90px] md:w-[125px] xl:w-[136px]"
-            src={MondayLogo}
-            alt="monday"
-          />
-          <Image
-            className="w-[90px] md:w-[125px] xl:w-[136px]"
-            src={SegmentLogo}
-            alt="segment"
-          />
-          <Image
-            className="w-[90px] md:w-[125px] xl:w-[136px]"
-            src={ProtonetLogo}
-            alt="protonet"
           />
         </div>
       </div>
