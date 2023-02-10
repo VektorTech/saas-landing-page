@@ -40,7 +40,7 @@ export default function Related() {
               isVisible *
               ((ref.current?.offsetTop || 0) -
                 (scrollTop + innerHeightRef.current))
-            }px, 0px, 0px)`,
+            }px, 0, 0)`,
           }}
           className="gap-x-[7%] flex justify-between items-center h-full will-change-transform"
         >
