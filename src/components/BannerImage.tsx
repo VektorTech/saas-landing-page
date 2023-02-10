@@ -71,7 +71,7 @@ const BannerImage = () => {
 
           <div
             style={{
-              transform: `${rotationStr} translateZ(0rem) translateX(-0.8rem) translateY(1rem)`,
+              transform: `${rotationStr} translateZ(0rem) translateX(-0.7rem) translateY(1rem)`,
               transition: "var(--transition)",
             }}
             className="absolute bg-white w-full rounded-[1.25rem] shadow-[0_24px_34px_0_#00000010]"
