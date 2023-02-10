@@ -3,13 +3,13 @@ import { SVGAttributes } from "react";
 export default function GDPRFeature() {
   return (
     <section className="container mt-16 mb-12 md:mt-24 md:mb-20">
-      <div className="p-5 sm:p-8 lg:p-11 rounded-[1.2rem] flex flex-col lg:flex-row gap-x-10 xl:gap-x-10 bg-white border-[#DEE1E6] border overflow-hidden">
-        <h2 className="text-[1.6rem] sm:text-[2rem] lg:text-[2.25rem] leading-[2.4rem] sm:leading-[2.8rem] text-left tracking-tight font-black whitespace-nowrap">
+      <div className="px-5 sm:px-8 py-10 rounded-[1.2rem] flex flex-col lg:flex-row gap-x-12 bg-white border-[#DEE1E6] border overflow-hidden">
+        <h2 className="text-[1.6rem] sm:text-[2rem] lg:text-[2.25rem] leading-[2.4rem] sm:leading-[2.8rem] text-left tracking-tighter font-black whitespace-nowrap">
           Germany-based <br />
           &amp; GDPR Compliant
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 mt-10 lg:mt-0 gap-y-6 lg:gap-y-0">
-          <div className="flex flex-row sm:text-left gap-x-4 gap-y-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 mt-10 lg:mt-0 gap-y-6 lg:gap-y-0">
+          <div className="flex items-center sm:text-left gap-x-4 gap-y-2">
             <div className="bg-neutral-300 w-15 h-15 shrink-0 rounded-md">
               <SecureIcon className="m-auto h-full" />
             </div>
@@ -17,7 +17,7 @@ export default function GDPRFeature() {
               Data does not leave our servers
             </p>
           </div>
-          <div className="flex flex-row sm:text-left gap-x-4 gap-y-2">
+          <div className="flex items-center sm:text-left gap-x-4 gap-y-2">
             <div className="bg-neutral-300 w-15 h-15 shrink-0 rounded-md">
               <InfrastructureIcon className="m-auto h-full" />
             </div>
@@ -25,7 +25,7 @@ export default function GDPRFeature() {
               Own infrastructure
             </p>
           </div>
-          <div className="flex flex-row sm:text-left gap-x-4 gap-y-2">
+          <div className="flex items-center sm:text-left gap-x-4 gap-y-2">
             <div className="bg-neutral-300 w-15 h-15 shrink-0 rounded-md">
               <DataCenterIcon className="m-auto h-full" />
             </div>
