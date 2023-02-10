@@ -19,21 +19,15 @@ const BannerImage = () => {
             const x = (event.clientX - midX) / midX;
             const y = (midY - event.clientY) / midY;
 
-            event.target.style.setProperty("--x-rot", `${x * 10}`);
-            event.target.style.setProperty("--y-rot", `${y * 10}`);
+            event.target.style.setProperty("--x-rot", `${x * 8}`);
+            event.target.style.setProperty("--y-rot", `${y * 8}`);
           }
-        }}
-        onMouseEnter={(event) => {
-          (event.target as HTMLDivElement).style.setProperty(
-            "--transition",
-            "none"
-          );
         }}
         onMouseLeave={(event) => {
           if (event.target instanceof HTMLDivElement) {
             event.target.style.setProperty(
               "--transition",
-              "transform .3s linear"
+              "transform .3s cubic-bezier(.23,1,.32,1)"
             );
             event.target.style.setProperty("--x-rot", "0");
             event.target.style.setProperty("--y-rot", "0");
@@ -77,10 +71,10 @@ const BannerImage = () => {
 
           <div
             style={{
-              transform: `${rotationStr} translateZ(0rem) translateX(-0.5rem) translateY(1rem)`,
+              transform: `${rotationStr} translateZ(0rem) translateX(-0.8rem) translateY(1rem)`,
               transition: "var(--transition)",
             }}
-            className="absolute bg-white w-full -translate-x-2 translate-y-2 lg:-translate-x-4 lg:translate-y-4 rounded-[1.25rem] shadow-[0_24px_34px_0_#00000010]"
+            className="absolute bg-white w-full rounded-[1.25rem] shadow-[0_24px_34px_0_#00000010]"
           >
             <Image
               priority
@@ -88,7 +82,7 @@ const BannerImage = () => {
               width={DashboardImage.width}
               height={DashboardImage.height}
               blurDataURL={DashboardImage.blurDataURL}
-              alt="dashboard"
+              alt="crypto fin dashboard"
             />
           </div>
         </div>

@@ -13,8 +13,8 @@ export default function Blog() {
       <h2 className="text-3xl md:text-5xl font-extrabold">Recent Blogs</h2>
 
       <Link href="/">
-        <article className="bg-white flex flex-col lg:flex-row mt-10 md:mt-20">
-          <section className="pt-4 md:pt-6 px-3 md:px-8 pb-10 lg:pb-0 lg:w-[60%]">
+        <div className="bg-white flex flex-col lg:flex-row mt-10 md:mt-20">
+          <article className="pt-4 md:pt-6 px-3 md:px-8 pb-10 lg:pb-0 lg:w-[60%]">
             <p className="uppercase text-sm md:text-base !font-black">
               best practices
             </p>
@@ -25,76 +25,76 @@ export default function Blog() {
             <p className="mt-16 text-base font-extrabold">
               Read More <RightArrow className="inline ml-2" />
             </p>
-          </section>
+          </article>
           <Image
-            alt=""
+            alt="blog stock image 1"
             className="w-full lg:w-[40%]"
             src={StockImage1}
-            width={StockImage1.width * 0.94}
-            height={StockImage1.height * 0.94}
+            width={Math.round(StockImage1.width * 0.94)}
+            height={Math.round(StockImage1.height * 0.94)}
           />
-        </article>
+        </div>
       </Link>
 
       <div className="grid lg:grid-cols-3 gap-x-7 space-y-7 lg:space-y-0 mt-7">
         <Link href="/">
-          <article className="bg-white">
-            <section className="pt-4 md:pt-6 px-3 md:px-8 h-56 overflow-hidden">
+          <div className="bg-white">
+            <article className="pt-4 md:pt-6 px-3 md:px-8 h-56 overflow-hidden">
               <p className="uppercase text-sm md:text-base !font-black">
                 best practices
               </p>
               <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] tracking-tighter mt-3">
                 Partiality on or continuing particular principles as.
               </h3>
-            </section>
+            </article>
             <Image
-              alt=""
+              alt="blog stock image 2"
               className="w-full"
               src={StockImage2}
               width={StockImage2.width}
               height={StockImage2.height}
             />
-          </article>
+          </div>
         </Link>
 
         <Link href="/">
-          <article className="bg-white">
-            <section className="pt-4 md:pt-6 px-3 md:px-8 h-56 overflow-hidden">
+          <div className="bg-white">
+            <article className="pt-4 md:pt-6 px-3 md:px-8 h-56 overflow-hidden">
               <p className="uppercase text-sm md:text-base !font-black">
                 best practices
               </p>
               <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] tracking-tighter mt-3">
                 Village did removed enjoyed explain
               </h3>
-            </section>
+            </article>
             <Image
-              alt=""
+              alt="blog stock image 3"
               className="w-full"
               src={StockImage3}
               width={StockImage3.width}
               height={StockImage3.height}
             />
-          </article>
+          </div>
         </Link>
 
         <Link href="/" className="">
-          <article className="bg-white">
-            <section className="pt-4 md:pt-6 px-3 md:px-8 h-56 overflow-hidden">
+          <div className="bg-white">
+            <article className="pt-4 md:pt-6 px-3 md:px-8 h-56 overflow-hidden">
               <p className="uppercase text-sm md:text-base !font-black">
                 best practices
               </p>
               <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] tracking-tighter mt-3">
                 Wise busy past both park when an ye no. Nay likely her length.
               </h3>
-            </section>
+            </article>
             <Image
-              alt=""
+              alt="blog stock image 4"
               className="w-full"
               src={StockImage4}
               width={StockImage4.width}
               height={StockImage4.height}
             />
-          </article>
+          </div>
         </Link>
       </div>
     </section>

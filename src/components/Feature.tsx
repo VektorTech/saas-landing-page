@@ -1,8 +1,8 @@
+import { SVGAttributes } from "react";
 import Image from "next/image";
 import Button from "./Button";
 
 import VideoPoster from "@/images/video-poster.png";
-import { SVGAttributes } from "react";
 
 export default function Feature() {
   return (
@@ -64,9 +64,9 @@ export default function Feature() {
               src={VideoPoster}
               width={VideoPoster.width}
               height={VideoPoster.height}
-              alt=""
+              alt="feature"
             />
-            <button className="hover:scale-75 transition-transform z-10 flex absolute bg-white text-accent rounded-full w-14 h-14 md:w-24 md:h-24 top-0 mt-[29.44%] left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <button aria-label="play feature video" className="hover:scale-75 transition-transform z-10 flex absolute bg-white text-accent rounded-full w-14 h-14 md:w-24 md:h-24 top-0 mt-[29.44%] left-1/2 -translate-x-1/2 -translate-y-1/2">
               <RightArrow
                 className="m-auto pl-[5px] w-[30px] h-[30px] md:w-[45px] md:h-[40px]"
                 width="45px"

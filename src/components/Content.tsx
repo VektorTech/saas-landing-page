@@ -11,7 +11,7 @@ import Graphic3 from "@/images/content/graphic3.svg";
 
 export default function Content() {
   return (
-    <section className="pt-14 container">
+    <div className="pt-14 container">
       <article className="grid lg:grid-cols-2 gap-x-12 text-left overflow-hidden">
         <div className="px-2 sm:px-8 relative">
           <div className="[clip-path:polygon(100%_13%,100%_93%,93%_100%,0_100%,0_13%)] h-full -z-10 absolute w-[93%] bg-[#EBECE8]"></div>
@@ -68,7 +68,7 @@ export default function Content() {
 
       <article className="grid lg:grid-cols-2 gap-x-12 mt-5 md:mt-20 text-left">
         <div className="relative lg:col-start-2 lg:row-end-2 overflow-hidden">
-          <Image className="mx-auto" src={CardGraphic} alt="" />
+          <Image className="mx-auto" src={CardGraphic} alt="credit card" />
         </div>
         <div className="col-start-1 flex flex-col pt-5 md:pt-10 pb-7 space-y-3 sm:space-y-7">
           <h2 className="uppercase text-sm sm:text-base md:text-lg !font-black text-primary">
@@ -92,6 +92,6 @@ export default function Content() {
           </Button>
         </div>
       </article>
-    </section>
+    </div>
   );
 }

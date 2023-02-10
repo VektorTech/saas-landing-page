@@ -108,7 +108,7 @@ export default function Hero() {
           </div>
         </div>
         <article className="container text-center pt-28 md:pt-32 xl:pt-40">
-          <h2 className="text-white font-extrabold text-3xl lg:text-6xl">
+          <h2 className="text-white !font-extrabold text-3xl sm:text-4xl lg:text-6xl">
             Managing your crypto portfolio
             <br />
             has never been easier
@@ -124,7 +124,7 @@ export default function Hero() {
               Get Started
             </Button>
             <button className="!font-light text-white text-base flex items-center gap-3">
-              <div className="h-15 w-15 hover:scale-75 transition-transform shrink-0 rounded-full bg-green text-white text-base flex justify-center items-center">
+              <span className="h-15 w-15 hover:scale-75 transition-transform shrink-0 rounded-full bg-green text-white text-base flex justify-center items-center">
                 <svg
                   className="pl-[2px] w-[1.88rem] h-[1.88rem]"
                   width="0"
@@ -140,7 +140,7 @@ export default function Hero() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </div>
+              </span>
               See How It Works
             </button>
           </div>

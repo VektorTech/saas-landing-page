@@ -22,7 +22,7 @@ export default function Footer() {
       <section className="container flex flex-col md:flex-row justify-between gap-y-20 md:gap-y-0 text-center md:text-left gap-x-16 pt-10 pb-28">
         <article className="grow">
           <h3 className="text-xl uppercase font-bold">Crypto Fin</h3>
-          <p className="text-[#ffffff66] text-base mt-9 max-w-lg">
+          <p className="text-[#ffffff88] text-base mt-9 max-w-lg">
             Yet bed any for traveling assistance indulgence unpleasing. Not
             thoughts all exercise blessing. Indulgence way everything joy
             alteration boisterous the attachment.
