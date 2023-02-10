@@ -29,6 +29,14 @@
   .center {
     @apply left-1/2 -translate-x-1/2;
   }
+
+  .clamp-line-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
 }
 
 @keyframes fade-in {

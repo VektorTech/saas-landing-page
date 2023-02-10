@@ -18,7 +18,7 @@ export default function Blog() {
             <p className="uppercase text-sm md:text-base !font-black">
               best practices
             </p>
-            <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] !tracking-tighter mt-3 max-w-[80%]">
+            <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] !tracking-tighter mt-3 clamp-line-3 max-w-[80%]">
               In design active temper be uneasy. Thirty for remove plenty
               regard.
             </h3>
@@ -43,7 +43,7 @@ export default function Blog() {
               <p className="uppercase text-sm md:text-base !font-black">
                 best practices
               </p>
-              <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] !tracking-tighter mt-3">
+              <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] !tracking-tighter mt-3 clamp-line-3">
                 Partiality on or continuing particular principles as.
               </h3>
             </article>
@@ -63,7 +63,7 @@ export default function Blog() {
               <p className="uppercase text-sm md:text-base !font-black">
                 best practices
               </p>
-              <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] !tracking-tighter mt-3">
+              <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] !tracking-tighter mt-3 clamp-line-3">
                 Village did removed enjoyed explain
               </h3>
             </article>
@@ -83,7 +83,7 @@ export default function Blog() {
               <p className="uppercase text-sm md:text-base !font-black">
                 best practices
               </p>
-              <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] !tracking-tighter mt-3">
+              <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] !tracking-tighter mt-3 clamp-line-3">
                 Wise busy past both park when an ye no. Nay likely her length.
               </h3>
             </article>
