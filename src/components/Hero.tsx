@@ -119,7 +119,7 @@ export default function Hero() {
             <br />
             the right platform to help realize.
           </p>
-          <div className="mt-10 md:mt-14 flex gap-3 sm:gap-8 md:gap-12 justify-center whitespace-nowrap scale-[0.55] sm:scale-75 md:scale-100">
+          <div className="mt-10 md:mt-14 flex gap-3 sm:gap-8 md:gap-12 justify-center whitespace-nowrap origin-top scale-75 md:scale-100">
             <Button href="#" bgColor="orange" rounded="rounded-full">
               Get Started
             </Button>
