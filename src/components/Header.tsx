@@ -1,12 +1,18 @@
 "use client";
 
-import { SVGAttributes, useEffect, useRef, useState } from "react";
+import {
+  SVGAttributes,
+  useEffect,
+  useRef,
+  useState,
+  lazy,
+  Suspense,
+} from "react";
 import Link from "next/link";
 
 import useScrollPosition from "@/hooks/useScrollPosition";
 import Button from "./Button";
-import Times from "@/images/times-x.svg";
-import Image from "next/image";
+const HeaderMenu = lazy(() => import("./HeaderMenu"));
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,6 +75,7 @@ export default function Header() {
           </div>
         </div>
         <button
+          aria-label="open navigation menu"
           onClick={() => setIsOpen(true)}
           className="md:hidden absolute right-2 top-3 bg-primary"
         >
@@ -77,41 +84,9 @@ export default function Header() {
       </header>
 
       {isOpen && (
-        <nav className="block animate-fade-in md:hidden w-full pb-20 fixed top-0 z-20 bg-primary">
-          <button
-            onClick={() => setIsOpen(false)}
-            className="text-white text-xl float-right mt-5 mr-4"
-          >
-            <Image src={Times} width={20} height={20} alt="" />
-          </button>
-          <ul className="mt-20 flex flex-col gap-y-8 text-white text-xl text-center justify-center items-center">
-            <li>
-              <Link href="#">
-                Product <ChevronDown className="w-2 h-2 inline ml-2 mb-[2px]" />
-              </Link>
-            </li>
-            <li>
-              <Link href="#">
-                Template{" "}
-                <ChevronDown className="w-2 h-2 inline ml-2 mb-[2px]" />
-              </Link>
-            </li>
-            <li>
-              <Link href="#">Blog</Link>
-            </li>
-            <li>
-              <Link href="#">Pricing</Link>
-            </li>
-            <li>
-              <Link href="#">Sign In</Link>
-            </li>
-            <li>
-              <Button href="#" bgColor="orange" rounded="rounded-lg">
-                Start Free
-              </Button>
-            </li>
-          </ul>
-        </nav>
+        <Suspense>
+          <HeaderMenu onClose={() => setIsOpen(false)} />
+        </Suspense>
       )}
     </>
   );
@@ -122,7 +97,6 @@ const HamburgerMenu = (props: SVGAttributes<SVGSVGElement>) => (
     <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="Menu">
         <rect
-          id="Rectangle"
           fillRule="nonzero"
           x="0"
           y="0"
@@ -134,7 +108,6 @@ const HamburgerMenu = (props: SVGAttributes<SVGSVGElement>) => (
           y1="7"
           x2="19"
           y2="7"
-          id="Path"
           stroke="#fff"
           strokeWidth="2"
           strokeLinecap="round"
@@ -144,7 +117,6 @@ const HamburgerMenu = (props: SVGAttributes<SVGSVGElement>) => (
           y1="17"
           x2="19"
           y2="17"
-          id="Path"
           stroke="#fff"
           strokeWidth="2"
           strokeLinecap="round"
@@ -154,7 +126,6 @@ const HamburgerMenu = (props: SVGAttributes<SVGSVGElement>) => (
           y1="12"
           x2="19"
           y2="12"
-          id="Path"
           stroke="#fff"
           strokeWidth="2"
           strokeLinecap="round"
