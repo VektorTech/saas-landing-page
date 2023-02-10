@@ -9,7 +9,7 @@ export default function Feature() {
     <section className="bg-primary text-white mt-20 lg:mt-28 pt-20 pb-16 lg:pt-36 lg:pb-28" id="feature-1">
       <div className="container">
         <header className="flex justify-between items-center flex-col lg:flex-row text-center lg:text-left gap-10 lg:gap-20">
-          <h2 className="px-5 lg:px-0 text-2xl sm:text-3xl md:text-[calc(1.5rem_+_1.04vw)] leading-[2.6rem] md:leading-[3.125rem] tracking-tight font-extrabold">
+          <h2 className="px-5 lg:px-0 text-2xl sm:text-3xl md:text-[calc(1.5rem_+_1.04vw)] leading-10 md:leading-[3.125rem] tracking-tight font-extrabold">
             Yet preference connection unpleasant
             <br />
             yet melancholy but end appearance

@@ -93,6 +93,11 @@ module.exports = {
         letterSpacing: "-0.1rem",
         fontWeight: "700",
         lineHeight: "calc(2.2rem + 2.3vw)"
+      }],
+      "blog-heading": ["1.82rem", {
+        letterSpacing: "-0.05em",
+        fontWeight: "800",
+        lineHeight: "2.25rem"
       }]
     },
     screens: {

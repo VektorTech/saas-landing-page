@@ -14,11 +14,11 @@ export default function Blog() {
 
       <Link href="/">
         <div className="bg-white flex flex-col lg:flex-row mt-10 md:mt-20">
-          <article className="pt-4 md:pt-6 px-3 md:px-8 pb-10 lg:w-[60%]">
-            <p className="uppercase text-sm md:text-base !font-black">
+          <article className="pt-4 md:pt-6 px-3 md:px-8 pb-10 lg:w-3/5">
+            <p className="uppercase text-sm md:text-base !font-extrabold">
               best practices
             </p>
-            <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] !tracking-tighter mt-3 clamp-line-3 max-w-[80%]">
+            <h3 className="text-lg sm:text-xl md:text-blog-heading !font-extrabold !tracking-tighter mt-3 clamp-line-3 max-w-[80%]">
               In design active temper be uneasy. Thirty for remove plenty
               regard.
             </h3>
@@ -40,10 +40,10 @@ export default function Blog() {
         <Link href="/">
           <div className="bg-white">
             <article className="pt-4 md:pt-6 px-3 md:px-8 h-56 overflow-hidden">
-              <p className="uppercase text-sm md:text-base !font-black">
+              <p className="uppercase text-sm md:text-base !font-extrabold">
                 best practices
               </p>
-              <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] !tracking-tighter mt-3 clamp-line-3">
+              <h3 className="text-lg sm:text-xl md:text-blog-heading !font-extrabold !tracking-tighter mt-3 clamp-line-3">
                 Partiality on or continuing particular principles as.
               </h3>
             </article>
@@ -60,10 +60,10 @@ export default function Blog() {
         <Link href="/">
           <div className="bg-white">
             <article className="pt-4 md:pt-6 px-3 md:px-8 h-56 overflow-hidden">
-              <p className="uppercase text-sm md:text-base !font-black">
+              <p className="uppercase text-sm md:text-base !font-extrabold">
                 best practices
               </p>
-              <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] !tracking-tighter mt-3 clamp-line-3">
+              <h3 className="text-lg sm:text-xl md:text-blog-heading !font-extrabold !tracking-tighter mt-3 clamp-line-3">
                 Village did removed enjoyed explain
               </h3>
             </article>
@@ -80,10 +80,10 @@ export default function Blog() {
         <Link href="/" className="">
           <div className="bg-white">
             <article className="pt-4 md:pt-6 px-3 md:px-8 h-56 overflow-hidden">
-              <p className="uppercase text-sm md:text-base !font-black">
+              <p className="uppercase text-sm md:text-base !font-extrabold">
                 best practices
               </p>
-              <h3 className="text-lg sm:text-xl md:text-[1.82rem] !font-black md:leading-[2.2rem] !tracking-tighter mt-3 clamp-line-3">
+              <h3 className="text-lg sm:text-xl md:text-blog-heading !font-extrabold !tracking-tighter mt-3 clamp-line-3">
                 Wise busy past both park when an ye no. Nay likely her length.
               </h3>
             </article>

@@ -47,10 +47,10 @@ export default function Content() {
           <h2 className="uppercase text-sm sm:text-base md:text-lg !font-black text-primary">
             Our Feature
           </h2>
-          <h3 className="text-3xl sm:text-5xl font-[700] ">
+          <h3 className="text-3xl sm:text-5xl font-bold">
             All of your portfolios are linked to your Crypto Fin account
           </h3>
-          <p className="text-sm sm:text-lg !font-[500] text-[#757095] ">
+          <p className="text-sm sm:text-lg !font-medium text-[#757095] ">
             Why kept very ever home mrs. Considered sympathize ten uncommonly
             occasional assistance sufficient not. Letter of on become he tended
             active enable to.
@@ -74,10 +74,10 @@ export default function Content() {
           <h2 className="uppercase text-sm sm:text-base md:text-lg !font-black text-primary">
             Our Feature
           </h2>
-          <h3 className="text-3xl sm:text-5xl font-[700] ">
+          <h3 className="text-3xl sm:text-5xl font-bold">
             All payments can be managed from one account
           </h3>
-          <p className="text-sm sm:text-lg !font-[500] text-[#757095] ">
+          <p className="text-sm sm:text-lg !font-medium text-[#757095] ">
             Why kept very ever home mrs. Considered sympathize ten uncommonly
             occasional assistance sufficient not. Letter of on become he tended
             active enable to.

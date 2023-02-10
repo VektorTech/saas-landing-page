@@ -33,7 +33,7 @@ const BannerImage = () => {
             event.target.style.setProperty("--y-rot", "0");
           }
         }}
-        className="w-[75%] sm:w-[70%] lg:w-[60%] xl:w-[48%] max-w-[47rem] mx-auto"
+        className="w-3/4 sm:w-[70%] lg:w-3/5 xl:w-[48%] max-w-[47rem] mx-auto"
       >
         <div
           style={{ perspective: "900px" }}
@@ -74,7 +74,7 @@ const BannerImage = () => {
               transform: `${rotationStr} translateZ(0rem) translateX(-0.7rem) translateY(1rem)`,
               transition: "var(--transition)",
             }}
-            className="absolute bg-white w-full rounded-[1.25rem] shadow-[0_24px_34px_0_#00000010]"
+            className="absolute bg-white w-full rounded-3xl shadow-[0_24px_34px_0_#00000010]"
           >
             <Image
               priority
