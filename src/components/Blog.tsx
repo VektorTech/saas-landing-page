@@ -1,11 +1,11 @@
+import { SVGAttributes } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import StockImage1 from "@/images/blog-stock-1.png";
-import StockImage2 from "@/images/blog-stock-2.png";
-import StockImage3 from "@/images/blog-stock-3.png";
-import StockImage4 from "@/images/blog-stock-4.png";
-import { SVGAttributes } from "react";
+import StockImage1 from "@/images/blog-stock-1.jpg";
+import StockImage2 from "@/images/blog-stock-2.jpg";
+import StockImage3 from "@/images/blog-stock-3.jpg";
+import StockImage4 from "@/images/blog-stock-4.jpg";
 
 export default function Blog() {
   return (
