@@ -5,7 +5,7 @@ import { SVGAttributes } from "react";
 import Button from "./Button";
 
 const HeaderMenu = ({ onClose }: { onClose: () => void }) => (
-  <nav className="block animate-fade-in md:hidden w-full pb-20 fixed top-0 z-20 bg-primary">
+  <nav aria-label="primary mobile navigation" className="block animate-fade-in md:hidden w-full pb-20 fixed top-0 z-20 bg-primary">
     <button
       onClick={onClose}
       className="text-white text-xl float-right mt-5 mr-4"

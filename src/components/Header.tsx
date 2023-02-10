@@ -39,7 +39,7 @@ export default function Header() {
           >
             Crypto Fin
           </Link>
-          <nav className="hidden md:block">
+          <nav aria-label="primary navigation" className="hidden md:block">
             <ul className="flex justify-center gap-x-6 lg:gap-x-8 text-white text-sm">
               <li>
                 <Link href="#">

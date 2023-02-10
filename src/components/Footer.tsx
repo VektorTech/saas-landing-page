@@ -19,7 +19,10 @@ export default function Footer() {
         </Button>
       </section>
       <hr className="bg-[#404444] h-[0.0625rem] border-none" />
-      <section className="container flex flex-col md:flex-row justify-between gap-y-20 md:gap-y-0 text-center md:text-left gap-x-16 pt-10 pb-28">
+      <nav
+        aria-label="footer navigation"
+        className="container flex flex-col md:flex-row justify-between gap-y-20 md:gap-y-0 text-center md:text-left gap-x-16 pt-10 pb-28"
+      >
         <article className="grow">
           <h3 className="text-xl uppercase font-bold">Crypto Fin</h3>
           <p className="text-[#ffffff88] text-base mt-9 max-w-lg">
@@ -28,7 +31,7 @@ export default function Footer() {
             alteration boisterous the attachment.
           </p>
         </article>
-        <nav>
+        <div>
           <h3 className="text-xl capitalize font-extrabold">Company</h3>
           <ul className="mt-9 space-y-5">
             <li>
@@ -52,8 +55,8 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-        </nav>
-        <nav>
+        </div>
+        <div>
           <h3 className="text-xl capitalize font-extrabold">Product</h3>
           <ul className="mt-9 space-y-5">
             <li>
@@ -77,8 +80,8 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-        </nav>
-        <nav>
+        </div>
+        <div>
           <h3 className="text-xl capitalize font-extrabold">Resources</h3>
           <ul className="mt-9 space-y-5">
             <li>
@@ -102,18 +105,17 @@ export default function Footer() {
               </Link>
             </li>
           </ul>
-        </nav>
-      </section>
+        </div>
+      </nav>
       <hr className="bg-[#404444] h-[0.0625rem] border-none" />
       <section className="container py-10 flex flex-col lg:flex-row text-center justify-between">
         <p className="text-xs !font-normal">
           &copy; {new Date().getFullYear()} Crypto Fin. All rights reserved.
-          &mdash;
-          {" "}
+          &mdash;{" "}
           <Link href="/" className="hover:underline">
             Privacy Policy
-          </Link>
-          {" "}&bull;{" "}
+          </Link>{" "}
+          &bull;{" "}
           <Link href="/" className="hover:underline">
             Terms of Services
           </Link>
