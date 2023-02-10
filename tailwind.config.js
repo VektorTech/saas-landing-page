@@ -79,7 +79,7 @@ module.exports = {
         letterSpacing: "-0.025rem",
         fontWeight: "600"
       }],
-      "4xl": ["calc(0.9rem + 2vw)", {
+      "4xl": ["calc(1rem + 2vw)", {
         lineHeight: "2.7rem",
         letterSpacing: "-0.025rem",
         fontWeight: "600"
