@@ -61,27 +61,27 @@ module.exports = {
       }],
       lg: ["1.125rem", {
         lineHeight: "1.625rem",
-        letterSpacing: "0rem",
+        letterSpacing: "-0.02rem",
         fontWeight: "500"
       }],
       xl: ["1.25rem", {
         lineHeight: "1.875rem",
-        letterSpacing: "0rem",
+        letterSpacing: "-0.04rem",
         fontWeight: "500"
       }],
       "2xl": ["1.375rem", {
         lineHeight: "1.875rem",
-        letterSpacing: "-0.025rem",
+        letterSpacing: "-0.05rem",
         fontWeight: "600"
       }],
       "3xl": ["1.625rem", {
         lineHeight: "1.875rem",
-        letterSpacing: "-0.025rem",
+        letterSpacing: "-0.05rem",
         fontWeight: "600"
       }],
       "4xl": ["calc(1rem + 2vw)", {
         lineHeight: "2.7rem",
-        letterSpacing: "-0.025rem",
+        letterSpacing: "-0.05rem",
         fontWeight: "600"
       }],
       "5xl": ["calc(2rem + 0.9vw)", {
