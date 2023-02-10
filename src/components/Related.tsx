@@ -22,7 +22,10 @@ export default function Related() {
   );
 
   useEffect(() => {
-    innerHeightRef.current = innerHeight;
+    const resizeHandler = () => (innerHeightRef.current = innerHeight);
+    resizeHandler();
+    addEventListener("resize", resizeHandler);
+    return () => removeEventListener("resize", resizeHandler);
   }, []);
 
   return (
@@ -33,13 +36,13 @@ export default function Related() {
       <div ref={ref} className="mt-5 md:mt-9 h-8 overflow-hidden">
         <div
           style={{
-            transform: `translateX(${
+            transform: `translate3d(${
               isVisible *
               ((ref.current?.offsetTop || 0) -
                 (scrollTop + innerHeightRef.current))
-            }px)`,
+            }px, 0px, 0px)`,
           }}
-          className="gap-x-[7%] flex justify-between items-center h-full"
+          className="gap-x-[7%] flex justify-between items-center h-full will-change-transform"
         >
           <Image
             className="w-[90px] md:w-[125px] xl:w-[136px]"
