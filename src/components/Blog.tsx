@@ -14,7 +14,7 @@ export default function Blog() {
 
       <Link href="/">
         <div className="bg-white flex flex-col lg:flex-row mt-10 md:mt-20">
-          <article className="pt-4 md:pt-6 px-3 md:px-8 pb-10 lg:pb-0 lg:w-[60%]">
+          <article className="pt-4 md:pt-6 px-3 md:px-8 pb-10 lg:w-[60%]">
             <p className="uppercase text-sm md:text-base !font-black">
               best practices
             </p>
@@ -28,7 +28,7 @@ export default function Blog() {
           </article>
           <Image
             alt="blog stock image 1"
-            className="w-full lg:w-[40%]"
+            className="w-full lg:w-[40%] object-cover"
             src={StockImage1}
             width={Math.round(StockImage1.width * 0.94)}
             height={Math.round(StockImage1.height * 0.94)}
