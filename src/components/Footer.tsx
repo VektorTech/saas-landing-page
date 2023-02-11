@@ -33,7 +33,7 @@ export default function Footer() {
         </article>
         <div>
           <h3 className="text-xl capitalize font-extrabold">Company</h3>
-          <ul className="mt-9 space-y-5">
+          <ul className="mt-9 text-base font-light space-y-5">
             <li>
               <Link href="/" className="hover:underline">
                 About Us
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
         <div>
           <h3 className="text-xl capitalize font-extrabold">Product</h3>
-          <ul className="mt-9 space-y-5">
+          <ul className="mt-9 text-base font-light space-y-5">
             <li>
               <Link href="/" className="hover:underline">
                 Invoicing Platform
@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
         <div>
           <h3 className="text-xl capitalize font-extrabold">Resources</h3>
-          <ul className="mt-9 space-y-5">
+          <ul className="mt-9 text-base font-light space-y-5">
             <li>
               <Link href="/" className="hover:underline">
                 Proposal Template

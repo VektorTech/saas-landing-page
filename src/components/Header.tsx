@@ -30,7 +30,7 @@ export default function Header() {
           isSticky.current ? "animate-slide" : ""
         } w-full py-4 ${
           isSticky.current ? "md:py-0" : "md:py-6"
-        } bg-primary z-20 whitespace-nowrap`}
+        } ${isSticky.current && "bg-primary"} z-20 whitespace-nowrap`}
       >
         <div className="container flex justify-between items-center">
           <Link

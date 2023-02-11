@@ -1,6 +1,7 @@
-import Times from "@/images/times-x.svg";
+import { SVGAttributes } from "react";
 import Image from "next/image";
 import Link from "next/link";
+
 import Times from "@/images/times-x.min.svg";
 import Button from "./Button";
 

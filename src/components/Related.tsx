@@ -33,7 +33,7 @@ export default function Related() {
       <h2 className="text-sm sm:text-lg md:text-2xl !font-[700]">
         Over 32k+ software businesses growing with Crypto Fin.
       </h2>
-      <div ref={ref} className="mt-5 md:mt-9 h-8 overflow-hidden">
+      <div ref={ref} className="mt-5 md:mt-9 h-8 overflow-hidden relative">
         <div
           style={{
             transform: `translate3d(${
@@ -100,6 +100,7 @@ export default function Related() {
             alt="samsung"
           />
         </div>
+        <div className="h-full w-full top-0 absolute bg-[linear-gradient(to_left,var(--bg-color)_0%,transparent_20%,transparent_80%,var(--bg-color)_100%)]"></div>
       </div>
     </section>
   );

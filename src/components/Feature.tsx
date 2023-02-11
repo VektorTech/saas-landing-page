@@ -9,7 +9,7 @@ export default function Feature() {
     <section className="bg-primary text-white mt-20 lg:mt-28 pt-20 pb-16 lg:pt-36 lg:pb-28" id="feature-1">
       <div className="container">
         <header className="flex justify-between items-center flex-col lg:flex-row text-center lg:text-left gap-10 lg:gap-20">
-          <h2 className="px-5 lg:px-0 text-2xl sm:text-3xl md:text-[calc(1.5rem_+_1.04vw)] leading-10 md:leading-[3.125rem] tracking-tight font-extrabold">
+          <h2 className="px-5 lg:px-0 text-2xl sm:text-3xl md:text-[calc(1.5rem_+_1.04vw)] leading-10 md:leading-[3.125rem] tracking-tight !font-bold">
             Yet preference connection unpleasant
             <br />
             yet melancholy but end appearance
@@ -74,7 +74,7 @@ export default function Feature() {
               />
             </button>
 
-            <div className="pl-[20%] pt-[20%] text-[#C4C4C4] opacity-50 absolute -top-[43%] -left-[25.5%] z-10">
+            <div className="pl-[20%] pt-[20%] text-[#C4C4C4] opacity-30 absolute -top-[43%] -left-[25.5%] z-10">
               <svg
                 width="0"
                 height="0"

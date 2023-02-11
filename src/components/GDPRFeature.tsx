@@ -4,7 +4,7 @@ export default function GDPRFeature() {
   return (
     <section className="container mt-16 mb-12 md:mt-24 md:mb-20">
       <div className="px-5 sm:px-8 py-10 rounded-[1.2rem] flex flex-col lg:flex-row gap-x-2 bg-white border-[#DEE1E6] border overflow-hidden">
-        <h2 className="text-[1.6rem] sm:text-[2rem] lg:text-[calc(1rem_+_1vw)] leading-10 sm:leading-[2.8rem] text-left tracking-tighter font-black whitespace-nowrap">
+        <h2 className="text-[1.6rem] sm:text-[2rem] lg:text-[calc(1rem_+_1vw)] leading-10 sm:leading-[2.8rem] text-left tracking-tighter font-extrabold whitespace-nowrap">
           Germany-based <wbr />
           &amp; GDPR Compliant
         </h2>

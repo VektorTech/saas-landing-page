@@ -43,7 +43,7 @@ export default function Content() {
             src={Graphic3}
           />
         </div>
-        <div className="flex flex-col pt-10 lg:pt-0 lg:justify-end pb-10 space-y-3 sm:space-y-7 lg:pl-5">
+        <div className="flex flex-col pt-10 lg:pt-0 lg:justify-end pb-12 space-y-3 sm:space-y-7 lg:pl-5">
           <h2 className="uppercase text-sm sm:text-base md:text-lg !font-black text-primary">
             Our Feature
           </h2>
@@ -68,7 +68,7 @@ export default function Content() {
 
       <article className="grid lg:grid-cols-2 gap-x-12 mt-5 md:mt-20 text-left">
         <div className="relative lg:col-start-2 lg:row-end-2 overflow-hidden">
-          <Image className="mx-auto" src={CardGraphic} alt="credit card" />
+          <Image className="mx-auto h-full w-full" src={CardGraphic} alt="credit card" />
         </div>
         <div className="col-start-1 flex flex-col pt-5 md:pt-10 pb-7 space-y-3 sm:space-y-7">
           <h2 className="uppercase text-sm sm:text-base md:text-lg !font-black text-primary">
