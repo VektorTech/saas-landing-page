@@ -18,7 +18,8 @@ export default function Related() {
   const scrollTop = useScrollPosition();
   const innerHeightRef = useRef(0);
   const isVisible = Number(
-    (ref.current?.offsetTop ?? Infinity) < scrollTop + innerHeightRef.current
+    (ref.current?.offsetTop ?? Infinity) < scrollTop + innerHeightRef.current &&
+      (ref.current?.offsetTop ?? 0) > scrollTop
   );
 
   useEffect(() => {
