@@ -112,7 +112,7 @@ module.exports = {
         slide: "slide 0.7s",
         "fade-in": "fade-in 0.7s",
         "fast-fade-in": "fade-in 0.3s",
-        "slide-intro": "slide-intro 0.5s"
+        "slide-intro": "slide-intro 0.5s forwards"
       },
       colors: {
         green: {
