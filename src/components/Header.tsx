@@ -62,7 +62,7 @@ export default function Header() {
             </ul>
           </nav>
           <div className="hidden md:block">
-            <Link className="text-white text-sm mr-6 lg:mr-12" href="/sign-in">
+            <Link className="text-white text-sm mr-6 lg:mr-12" href="/">
               Sign In
             </Link>
             <Button

@@ -9,11 +9,11 @@ export default function Hero() {
         <div
           className={[
             "pointer-events-none full-size -z-[1]",
-            "opacity-30 sm:opacity-80 md:opacity-100",
+            "opacity-70 md:opacity-100",
             "bg-[radial-gradient(circle_at_10%_50%,#10ACDD45_0%,transparent_22%),_radial-gradient(circle_at_68%_75%,#10ACDD45_0%,transparent_23%)]",
           ].join(" ")}
         >
-          <div className="full-size top-0">
+          <div className="full-size top-0 hidden md:block">
             <div className="container relative">
               <div className="[clip-path:polygon(0_0,100%_0,100%_100%,0_65%)] w-[6.2rem] sm:w-[7.3rem] h-32 bg-[#8FD0FF16] absolute left-3 top-0"></div>
             </div>
