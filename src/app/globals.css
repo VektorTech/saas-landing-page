@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --bg-color: #FAFBFF;
+  --bg-color: #fafbff;
 }
 
 @layer base {
@@ -43,8 +43,23 @@
 }
 
 @keyframes fade-in {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-intro {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 30%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0);
+  }
 }
 
 @keyframes slide {

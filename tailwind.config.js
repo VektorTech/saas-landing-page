@@ -111,7 +111,8 @@ module.exports = {
         shake: "shake 1s cubic-bezier(.36,.07,.19,.97) both",
         slide: "slide 0.7s",
         "fade-in": "fade-in 0.7s",
-        "slow-fade-in": "fade-in 1.5s"
+        "fast-fade-in": "fade-in 0.3s",
+        "slide-intro": "slide-intro 0.5s"
       },
       colors: {
         green: {
