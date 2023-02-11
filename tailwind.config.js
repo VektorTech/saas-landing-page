@@ -94,7 +94,7 @@ module.exports = {
         fontWeight: "700",
         lineHeight: "calc(2.2rem + 2.3vw)"
       }],
-      "blog-heading": ["1.82rem", {
+      "blog-heading": ["1.84rem", {
         letterSpacing: "-0.05em",
         fontWeight: "800",
         lineHeight: "2.25rem"

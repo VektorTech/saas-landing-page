@@ -10,9 +10,8 @@ export default function Footer() {
           creative people with Crypto Fin
         </h2>
         <Button
-          className="mt-6 text-[#121313] font-extrabold"
+          className="mt-6 text-[#121313] font-extrabold bg-[#F9896B]"
           rounded="rounded-md"
-          bgColor="orange"
           href="#"
         >
           Join the Waitlist &nbsp; <span className="text-2xl font-black pb-[2px]">&rarr;</span>
@@ -24,16 +23,16 @@ export default function Footer() {
         className="container flex flex-col md:flex-row justify-between gap-x-10 gap-y-20 md:gap-y-0 text-center md:text-left pt-10 pb-28"
       >
         <article className="basis-[45%]">
-          <h3 className="text-xl uppercase font-bold">Crypto Fin</h3>
-          <p className="text-[#ffffff66] text-base mt-9 max-w-lg">
+          <h3 className="text-xl uppercase font-bold tracking-wide">Crypto Fin</h3>
+          <p className="text-[#ffffff66] text-base mt-9 max-w-lg tracking-wide">
             Yet bed any for traveling assistance indulgence unpleasing. Not
             thoughts all exercise blessing. Indulgence way everything joy
             alteration boisterous the attachment.
           </p>
         </article>
         <div>
-          <h3 className="text-xl capitalize font-semibold">Company</h3>
-          <ul className="mt-9 text-base font-light space-y-5">
+          <h3 className="text-xl capitalize font-semibold tracking-wide">Company</h3>
+          <ul className="mt-9 text-base font-light space-y-5 tracking-wide">
             <li>
               <Link href="/" className="hover:underline">
                 About Us
@@ -57,8 +56,8 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h3 className="text-xl capitalize font-semibold">Product</h3>
-          <ul className="mt-9 text-base font-light space-y-5">
+          <h3 className="text-xl capitalize font-semibold tracking-wide">Product</h3>
+          <ul className="mt-9 text-base font-light space-y-5 tracking-wide">
             <li>
               <Link href="/" className="hover:underline">
                 Invoicing Platform
@@ -82,8 +81,8 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h3 className="text-xl capitalize font-semibold">Resources</h3>
-          <ul className="mt-9 text-base font-light space-y-5">
+          <h3 className="text-xl capitalize font-semibold tracking-wide">Resources</h3>
+          <ul className="mt-9 text-base font-light space-y-5 tracking-wide">
             <li>
               <Link href="/" className="hover:underline">
                 Proposal Template
@@ -109,7 +108,7 @@ export default function Footer() {
       </nav>
       <hr className="bg-[#404444] h-[0.0625rem] border-none" />
       <section className="container py-10 flex flex-col lg:flex-row text-center justify-between">
-        <p className="text-xs">
+        <p className="text-xs tracking-wide">
           &copy; {new Date().getFullYear()} Crypto Fin. All rights reserved.
           &mdash;{" "}
           <Link href="/" className="hover:underline">
@@ -120,7 +119,7 @@ export default function Footer() {
             Terms of Services
           </Link>
         </p>
-        <p className="text-xs mt-2 lg:mt-0 font-normal">
+        <p className="text-xs mt-2 lg:mt-0 font-normal tracking-wide">
           Supported by <strong>Microsoft Startup</strong>
         </p>
       </section>

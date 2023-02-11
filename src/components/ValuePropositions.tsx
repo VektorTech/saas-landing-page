@@ -9,10 +9,10 @@ export default function ValuePropositions() {
           "shadow-[0_141px_113px_0_#00000007,0_91px_66px_0_#00000005,0_55px_36px_0_#00000004,0_28px_18px_0_#00000004,0_12px_9px_0_#00000003,0_3px_4px_0_#00000002]",
         ].join(" ")}
       >
-        <h2 className="font-extrabold tracking-tight text-3xl md:text-[calc(1.1rem_+_1.3vw)] leading-[2rem] md:leading-[3rem]">
+        <h2 className="font-extrabold tracking-tight text-3xl md:text-[calc(1.11rem_+_1.3vw)] leading-[2rem] md:leading-[3rem]">
           Outward clothes promise at gravity.
         </h2>
-        <p className="mt-5 text-base text-[#64607D]">
+        <p className="mt-5 text-base font-normal text-[#64607D]">
           End-to-end payments and financial management in a single solution.
           Meet the right platform to help realize.
         </p>
@@ -27,10 +27,10 @@ export default function ValuePropositions() {
           "shadow-[0_141px_113px_0_#00000007,0_91px_66px_0_#00000005,0_55px_36px_0_#00000004,0_28px_18px_0_#00000004,0_12px_9px_0_#00000003,0_3px_4px_0_#00000002]",
         ].join(" ")}
       >
-        <h2 className="font-extrabold tracking-tight text-3xl md:text-[calc(1.1rem_+_1.3vw)] leading-[2rem] md:leading-[3rem]">
+        <h2 className="font-extrabold tracking-tight text-3xl md:text-[calc(1.11rem_+_1.3vw)] leading-[2rem] md:leading-[3rem]">
           Sufficient particular impossible.
         </h2>
-        <p className="mt-5 text-base text-[#64607D]">
+        <p className="mt-5 text-base font-normal text-[#64607D]">
           End-to-end payments and financial management in a single solution.
           Meet the right platform to help realize.
         </p>

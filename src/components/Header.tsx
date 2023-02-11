@@ -69,6 +69,7 @@ export default function Header() {
               href="#"
               bgColor="orange"
               rounded={isSticky.current ? "rounded-0" : "rounded-lg"}
+              className="h-[3.25rem]"
             >
               Start Free
             </Button>
