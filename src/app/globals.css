@@ -35,8 +35,7 @@
   }
 
   .clamp-line-3 {
-    overflow: hidden;
-    text-overflow: ellipsis;
+    @apply overflow-hidden text-ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
