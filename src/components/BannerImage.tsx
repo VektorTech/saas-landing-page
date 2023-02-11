@@ -3,8 +3,6 @@
 import DashboardImage from "@/images/dashboard.png";
 import Image from "next/image";
 
-const rotationStr =
-  "rotateX(calc(var(--y-rot, 0)*1deg)) rotateY(calc(var(--x-rot, 0)*1deg))";
 const BannerImage = () => {
   return (
     <div className="relative">
@@ -13,8 +11,8 @@ const BannerImage = () => {
           if (event.target instanceof HTMLDivElement) {
             const { left, top, width, height } =
               event.target.getBoundingClientRect();
-            const midX = (left + width) / 2;
-            const midY = (top + height) / 2;
+            const midX = left + width / 2;
+            const midY = top + height / 2;
 
             const x = (event.clientX - midX) / midX;
             const y = (midY - event.clientY) / midY;
@@ -36,26 +34,26 @@ const BannerImage = () => {
         className="w-3/4 sm:w-[70%] lg:w-3/5 xl:w-[48%] max-w-[47rem] mx-auto"
       >
         <div
-          style={{ perspective: "900px" }}
+          style={{ perspective: "800px" }}
           className="pointer-events-none pb-[68%] -mt-[22%] relative"
         >
           <div
             style={{
-              transform: `${rotationStr} translateZ(-1rem)`,
+              transform: `rotateX(calc(var(--y-rot, 0)*1deg)) rotateY(calc(var(--x-rot, 0)*1deg)) translateZ(-1rem)`,
               transition: "var(--transition)",
             }}
             className="bg-[#ffffff16] rounded-lg absolute w-[calc(100%_+_6rem)] h-[calc(83%_+_6rem)] -ml-[3rem] -mt-[3rem]"
           ></div>
           <div
             style={{
-              transform: `${rotationStr} translateZ(-0.8rem)`,
+              transform: `rotateX(calc(var(--y-rot, 0)*1deg)) rotateY(calc(var(--x-rot, 0)*1deg)) translateZ(-0.8rem)`,
               transition: "var(--transition)",
             }}
             className="bg-[#ffffff16] rounded-lg absolute w-[calc(100%_+_4rem)] h-[calc(83%_+_4rem)] -ml-[2rem] -mt-[2rem]"
           ></div>
           <div
             style={{
-              transform: `${rotationStr} translateZ(-0.6rem)`,
+              transform: `rotateX(calc(var(--y-rot, 0)*1deg)) rotateY(calc(var(--x-rot, 0)*1deg)) translateZ(-0.6rem)`,
               transition: "var(--transition)",
             }}
             className="bg-[#ffffff16] rounded-lg absolute w-[calc(100%_+_2rem)] h-[calc(83%_+_2rem)] -ml-[1rem] -mt-[1rem]"
@@ -63,18 +61,10 @@ const BannerImage = () => {
 
           <div
             style={{
-              transform: `${rotationStr} translateZ(-0.4rem)`,
+              transform: `rotateX(calc(var(--y-rot, 0)*1deg)) rotateY(calc(var(--x-rot, 0)*1deg)) translateZ(0rem)`,
               transition: "var(--transition)",
             }}
-            className="bg-white rounded-lg absolute w-full h-[83%]"
-          ></div>
-
-          <div
-            style={{
-              transform: `${rotationStr} translateZ(0rem) translateX(-0.7rem) translateY(1rem)`,
-              transition: "var(--transition)",
-            }}
-            className="absolute bg-white w-full rounded-3xl shadow-[0_24px_34px_0_#00000010]"
+            className="absolute bg-white w-full rounded-lg shadow-[0_24px_34px_0_#00000010]"
           >
             <Image
               priority
