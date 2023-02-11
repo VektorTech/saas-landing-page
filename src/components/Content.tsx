@@ -2,12 +2,12 @@ import Image from "next/image";
 import Button from "./Button";
 
 import StockImg1 from "@/images/woman.png";
-import CardGraphic from "@/images/card-graphic.svg";
+import CardGraphic from "@/images/card-graphic.min.svg";
 
-import Graphic0 from "@/images/content/graphic0.svg";
-import Graphic1 from "@/images/content/graphic1.svg";
-import Graphic2 from "@/images/content/graphic2.svg";
-import Graphic3 from "@/images/content/graphic3.svg";
+import Graphic0 from "@/images/content/graphic0.min.svg";
+import Graphic1 from "@/images/content/graphic1.min.svg";
+import Graphic2 from "@/images/content/graphic2.min.svg";
+import Graphic3 from "@/images/content/graphic3.min.svg";
 
 export default function Content() {
   return (

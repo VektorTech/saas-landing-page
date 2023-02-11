@@ -3,13 +3,13 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
-import OpenZeppelinLogo from "@/images/related_companies/openzeppelin-logo-vector.svg";
-import OracleLogo from "@/images/related_companies/Oracle_logo.svg";
-import MorpheusLogo from "@/images/related_companies/morpheus-svgrepo-com.svg";
-import SamsungLogo from "@/images/related_companies/samsung-svgrepo-com.svg";
-import MondayLogo from "@/images/related_companies/monday-svgrepo-com.svg";
-import SegmentLogo from "@/images/related_companies/segment-svgrepo-com.svg";
-import ProtonetLogo from "@/images/related_companies/protonet-svgrepo-com.svg";
+import OpenZeppelinLogo from "@/images/related_companies/openzeppelin-logo-vector.min.svg";
+import OracleLogo from "@/images/related_companies/Oracle_logo.min.svg";
+import MorpheusLogo from "@/images/related_companies/morpheus-svgrepo-com.min.svg";
+import SamsungLogo from "@/images/related_companies/samsung-svgrepo-com.min.svg";
+import MondayLogo from "@/images/related_companies/monday-svgrepo-com.min.svg";
+import SegmentLogo from "@/images/related_companies/segment-svgrepo-com.min.svg";
+import ProtonetLogo from "@/images/related_companies/protonet-svgrepo-com.min.svg";
 
 import useScrollPosition from "@/hooks/useScrollPosition";
 

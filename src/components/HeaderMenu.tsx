@@ -1,7 +1,7 @@
 import Times from "@/images/times-x.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { SVGAttributes } from "react";
+import Times from "@/images/times-x.min.svg";
 import Button from "./Button";
 
 const HeaderMenu = ({ onClose }: { onClose: () => void }) => (
