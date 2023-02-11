@@ -13,7 +13,7 @@ export default function GDPRFeature() {
             <div className="bg-neutral-300 w-15 h-15 shrink-0 rounded-md">
               <SecureIcon className="m-auto h-full" />
             </div>
-            <p className="text-lg overflow-hidden text-[#64607D] font-bold">
+            <p className="text-xl overflow-hidden text-[#64607D] font-bold">
               Data does not leave our servers
             </p>
           </div>
@@ -21,7 +21,7 @@ export default function GDPRFeature() {
             <div className="bg-neutral-300 w-15 h-15 shrink-0 rounded-md">
               <InfrastructureIcon className="m-auto h-full" />
             </div>
-            <p className="text-lg overflow-hidden text-[#64607D] font-bold">
+            <p className="text-xl overflow-hidden text-[#64607D] font-bold">
               Own infrastructure
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function GDPRFeature() {
             <div className="bg-neutral-300 w-15 h-15 shrink-0 rounded-md">
               <DataCenterIcon className="m-auto h-full" />
             </div>
-            <p className="text-lg overflow-hidden text-[#64607D] font-bold">
+            <p className="text-xl overflow-hidden text-[#64607D] font-bold">
               Most renowned data centers
             </p>
           </div>

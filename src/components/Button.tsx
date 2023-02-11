@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 
 export default function Button({
   href,
@@ -34,7 +35,7 @@ const bgColors: Record<Exclude<ButtonProps["bgColor"], undefined>, string> = {
 
 interface ButtonProps {
   href: string;
-  children: string;
+  children: string | ReactNode;
   bgColor?: "orange" | "primary" | "purple";
   rounded?: string;
   className?: string;

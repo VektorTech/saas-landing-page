@@ -10,8 +10,7 @@ export default function Hero() {
           className={[
             "pointer-events-none full-size -z-[1]",
             "opacity-30 sm:opacity-80 md:opacity-100",
-            "bg-[radial-gradient(circle_at_8%_25%,#10ACDD45_0%,transparent_35%),_radial-gradient(circle_at_75%_75%,#10ACDD45_0%,transparent_55%)]",
-            "md:bg-[radial-gradient(circle_at_7%_50%,#10ACDD45_0%,transparent_22%),_radial-gradient(circle_at_68%_75%,#10ACDD45_0%,transparent_23%)]",
+            "bg-[radial-gradient(circle_at_10%_50%,#10ACDD45_0%,transparent_22%),_radial-gradient(circle_at_68%_75%,#10ACDD45_0%,transparent_23%)]",
           ].join(" ")}
         >
           <div className="full-size top-0">
@@ -115,7 +114,7 @@ export default function Hero() {
             <br />
             has never been easier
           </h2>
-          <p className="text-white text-sm md:text-base !font-light lg:text-xl mt-8 px-10 lg:px-0">
+          <p className="text-white text-sm md:text-base lg:text-xl !font-light lg:tracking-[0] mt-8 px-10 lg:px-0">
             End-to-end payments and financial management in a single solution.
             Meet
             <br />

@@ -16,7 +16,7 @@ export default function RootLayout({ children }: IProps) {
       <head />
       <body>
         <Header />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

@@ -31,7 +31,7 @@ export default function Related() {
 
   return (
     <section className="px-3 max-w-[98rem] mx-auto md:px-10 text-center mt-14 md:mt-[4.75rem]">
-      <h2 className="text-sm sm:text-lg md:text-2xl !font-[700]">
+      <h2 className="text-sm sm:text-lg md:text-2xl !font-semibold">
         Over 32k+ software businesses growing with Crypto Fin.
       </h2>
       <div ref={ref} className="mt-5 md:mt-9 h-8 overflow-hidden relative">

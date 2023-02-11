@@ -15,24 +15,24 @@ export default function Footer() {
           bgColor="orange"
           href="#"
         >
-          Join the Waitlist &nbsp; &rarr;
+          Join the Waitlist &nbsp; <span className="text-2xl font-black pb-[2px]">&rarr;</span>
         </Button>
       </section>
       <hr className="bg-[#404444] h-[0.0625rem] border-none" />
       <nav
         aria-label="footer navigation"
-        className="container flex flex-col md:flex-row justify-between gap-y-20 md:gap-y-0 text-center md:text-left gap-x-16 pt-10 pb-28"
+        className="container flex flex-col md:flex-row justify-between gap-x-10 gap-y-20 md:gap-y-0 text-center md:text-left pt-10 pb-28"
       >
-        <article className="grow">
+        <article className="basis-[45%]">
           <h3 className="text-xl uppercase font-bold">Crypto Fin</h3>
-          <p className="text-[#ffffff88] text-base mt-9 max-w-lg">
+          <p className="text-[#ffffff66] text-base mt-9 max-w-lg">
             Yet bed any for traveling assistance indulgence unpleasing. Not
             thoughts all exercise blessing. Indulgence way everything joy
             alteration boisterous the attachment.
           </p>
         </article>
         <div>
-          <h3 className="text-xl capitalize font-extrabold">Company</h3>
+          <h3 className="text-xl capitalize font-semibold">Company</h3>
           <ul className="mt-9 text-base font-light space-y-5">
             <li>
               <Link href="/" className="hover:underline">
@@ -57,7 +57,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h3 className="text-xl capitalize font-extrabold">Product</h3>
+          <h3 className="text-xl capitalize font-semibold">Product</h3>
           <ul className="mt-9 text-base font-light space-y-5">
             <li>
               <Link href="/" className="hover:underline">
@@ -82,7 +82,7 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h3 className="text-xl capitalize font-extrabold">Resources</h3>
+          <h3 className="text-xl capitalize font-semibold">Resources</h3>
           <ul className="mt-9 text-base font-light space-y-5">
             <li>
               <Link href="/" className="hover:underline">
@@ -109,7 +109,7 @@ export default function Footer() {
       </nav>
       <hr className="bg-[#404444] h-[0.0625rem] border-none" />
       <section className="container py-10 flex flex-col lg:flex-row text-center justify-between">
-        <p className="text-xs !font-normal">
+        <p className="text-xs">
           &copy; {new Date().getFullYear()} Crypto Fin. All rights reserved.
           &mdash;{" "}
           <Link href="/" className="hover:underline">
@@ -121,7 +121,7 @@ export default function Footer() {
           </Link>
         </p>
         <p className="text-xs mt-2 lg:mt-0 font-normal">
-          Supported by <strong className="font-bold">Microsoft Startup</strong>
+          Supported by <strong>Microsoft Startup</strong>
         </p>
       </section>
     </footer>

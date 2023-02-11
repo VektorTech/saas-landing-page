@@ -57,14 +57,14 @@ module.exports = {
       base: ["1rem", {
         lineHeight: "1.625rem",
         letterSpacing: "0rem",
-        fontWeight: "400"
+        fontWeight: "300"
       }],
       lg: ["1.125rem", {
         lineHeight: "1.625rem",
         letterSpacing: "-0.02rem",
         fontWeight: "500"
       }],
-      xl: ["1.25rem", {
+      xl: ["1.23rem", {
         lineHeight: "1.875rem",
         letterSpacing: "-0.04rem",
         fontWeight: "500"
@@ -89,7 +89,7 @@ module.exports = {
         letterSpacing: "-0.1rem",
         fontWeight: "800"
       }],
-      "6xl": ["calc(2.25rem + 1.2vw)", {
+      "6xl": ["calc(2.3rem + 1.2vw)", {
         letterSpacing: "-0.1rem",
         fontWeight: "700",
         lineHeight: "calc(2.2rem + 2.3vw)"
@@ -103,14 +103,15 @@ module.exports = {
     screens: {
       sm: '36rem',
       md: '48rem',
-      lg: '62rem',
-      xl: "76rem"
+      lg: '64rem',
+      xl: "78rem"
     },
     extend: {
       animation: {
         shake: "shake 1s cubic-bezier(.36,.07,.19,.97) both",
         slide: "slide 0.7s",
-        "fade-in": "fade-in 0.7s"
+        "fade-in": "fade-in 0.7s",
+        "slow-fade-in": "fade-in 1.5s"
       },
       colors: {
         green: {
