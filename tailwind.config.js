@@ -34,7 +34,7 @@ module.exports = {
       },
       neutral: {
         ...colors.neutral,
-        100: "#FAFBFF",
+        100: "var(--bg-color)",
         200: "#C4C4C4",
         300: "#EBECE8",
         700: "#404444",
@@ -85,7 +85,7 @@ module.exports = {
         fontWeight: "600"
       }],
       "5xl": ["calc(2rem + 0.9vw)", {
-        lineHeight: "3.6rem",
+        lineHeight: "3.4rem",
         letterSpacing: "-0.1rem",
         fontWeight: "800"
       }],

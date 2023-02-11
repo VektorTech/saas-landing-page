@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-color: #FAFBFF;
+}
+
 @layer base {
   * {
     @apply box-border p-0 m-0;
