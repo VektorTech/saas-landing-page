@@ -110,6 +110,7 @@ module.exports = {
       animation: {
         shake: "shake 1s cubic-bezier(.36,.07,.19,.97) both",
         slide: "slide 0.7s",
+        "slide-out": "slide-out 0.5s",
         "fade-in": "fade-in 0.7s",
         "fast-fade-in": "fade-in 0.3s",
         "slide-intro": "slide-intro 0.5s forwards"
