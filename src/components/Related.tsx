@@ -15,8 +15,8 @@ import useScrollPosition from "@/hooks/useScrollPosition";
 
 export default function Related() {
   const ref = useRef<HTMLDivElement | null>(null);
-  const scrollTop = useScrollPosition();
   const innerHeightRef = useRef(0);
+  const scrollTop = useScrollPosition();
   const isVisible = Number(
     (ref.current?.offsetTop ?? Infinity) < scrollTop + innerHeightRef.current &&
       (ref.current?.offsetTop ?? 0) > scrollTop
@@ -43,7 +43,7 @@ export default function Related() {
                 (scrollTop + innerHeightRef.current))
             }px, 0, 0)`,
           }}
-          className="gap-x-[7%] flex justify-between items-center h-full will-change-transform"
+          className="gap-x-[7%] flex justify-between items-center h-full will-change-transform transform-gpu"
         >
           <Image
             className="w-[90px] md:w-[125px] xl:w-[136px]"
