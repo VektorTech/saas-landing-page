@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  SVGAttributes,
-  useEffect,
-  useRef,
-  useState,
-  lazy,
-  Suspense,
-} from "react";
+import { SVGAttributes, useState, Suspense, lazy } from "react";
 import Link from "next/link";
 
 import useScrollPosition from "@/hooks/useScrollPosition";
@@ -15,24 +8,23 @@ import Button from "./Button";
 const HeaderMenu = lazy(() => import("./HeaderMenu"));
 
 export default function Header() {
+  const PADDING_Y = 24;
   const [isOpen, setIsOpen] = useState(false);
   const scrollTop = useScrollPosition();
-  const isSticky = useRef(false);
-
-  useEffect(() => {
-    isSticky.current = scrollTop > innerHeight;
-  }, [scrollTop]);
+  const isSticky = scrollTop > PADDING_Y;
+  const top = Math.max(0, PADDING_Y - scrollTop);
 
   return (
     <>
       <header
-        className={`${isSticky.current ? "fixed" : "absolute"} ${
-          isSticky.current ? "animate-slide" : ""
-        } w-full py-4 ${
-          isSticky.current ? "md:py-0" : "md:py-6"
-        } ${isSticky.current && "bg-primary"} z-20 whitespace-nowrap`}
+        style={{ top: `calc(${top}px * var(--small))` }}
+        className={`fixed [--small:0] md:[--small:1] w-full h-[3.25rem] ${
+          isSticky && "bg-primary"
+        } z-20 whitespace-nowrap ${
+          isSticky ? "shadow-[0_8px_20px_rgb(50_12_192_/_30%)]" : ""
+        }`}
       >
-        <div className="container flex justify-between items-center">
+        <div className="container flex justify-between items-center h-full">
           <Link
             className="block uppercase text-white !font-black text-base sm:text-xl"
             href="/"
@@ -68,7 +60,7 @@ export default function Header() {
             <Button
               href="#"
               bgColor="orange"
-              rounded={isSticky.current ? "rounded-0" : "rounded-lg"}
+              rounded={isSticky ? "rounded-0" : "rounded-lg"}
               className="h-[3.25rem]"
             >
               Start Free
@@ -78,7 +70,7 @@ export default function Header() {
         <button
           aria-label="open navigation menu"
           onClick={() => setIsOpen(true)}
-          className="md:hidden absolute right-2 top-3 bg-primary"
+          className="md:hidden absolute right-2 top-1 bg-primary"
         >
           <HamburgerMenu />
         </button>
@@ -97,13 +89,7 @@ const HamburgerMenu = (props: SVGAttributes<SVGSVGElement>) => (
   <svg width="38px" height="38px" viewBox="0 0 24 24" {...props}>
     <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g id="Menu">
-        <rect
-          fillRule="nonzero"
-          x="0"
-          y="0"
-          width="24"
-          height="24"
-        ></rect>
+        <rect fillRule="nonzero" x="0" y="0" width="24" height="24"></rect>
         <line
           x1="5"
           y1="7"
