@@ -11,22 +11,31 @@ import MondayLogo from "@/images/related_companies/monday-svgrepo-com.min.svg";
 import SegmentLogo from "@/images/related_companies/segment-svgrepo-com.min.svg";
 import ProtonetLogo from "@/images/related_companies/protonet-svgrepo-com.min.svg";
 
-import useScrollPosition from "@/hooks/useScrollPosition";
-
 export default function Related() {
-  const ref = useRef<HTMLDivElement | null>(null);
-  const innerHeightRef = useRef(0);
-  const scrollTop = useScrollPosition();
-  const isVisible = Number(
-    (ref.current?.offsetTop ?? Infinity) < scrollTop + innerHeightRef.current &&
-      (ref.current?.offsetTop ?? 0) > scrollTop
-  );
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const iconsRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const resizeHandler = () => (innerHeightRef.current = innerHeight);
-    resizeHandler();
-    addEventListener("resize", resizeHandler);
-    return () => removeEventListener("resize", resizeHandler);
+    const icons = iconsRef.current;
+    if (icons) {
+      const scrollHandler = () => {
+        const isVisible = Number(
+          (containerRef.current?.offsetTop ?? Infinity) <
+            scrollY + innerHeight &&
+            (containerRef.current?.offsetTop ?? 0) > scrollY
+        );
+
+        icons.style.transform = `translate3d(${
+          isVisible *
+          ((containerRef.current?.offsetTop || 0) - (scrollY + innerHeight))
+        }px, 0, 0)`;
+      };
+
+      addEventListener("scroll", scrollHandler);
+      return () => {
+        removeEventListener("scroll", scrollHandler);
+      };
+    }
   }, []);
 
   return (
@@ -34,15 +43,12 @@ export default function Related() {
       <h2 className="text-sm sm:text-lg md:text-2xl !font-semibold">
         Over 32k+ software businesses growing with Crypto Fin.
       </h2>
-      <div ref={ref} className="mt-5 md:mt-9 h-8 overflow-hidden relative">
+      <div
+        ref={containerRef}
+        className="mt-5 md:mt-9 h-8 overflow-hidden relative"
+      >
         <div
-          style={{
-            transform: `translate3d(${
-              isVisible *
-              ((ref.current?.offsetTop || 0) -
-                (scrollTop + innerHeightRef.current))
-            }px, 0, 0)`,
-          }}
+          ref={iconsRef}
           className="gap-x-[7%] flex justify-between items-center h-full will-change-transform transform-gpu"
         >
           <Image
