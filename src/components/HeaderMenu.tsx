@@ -29,11 +29,13 @@ const HeaderMenu = ({ onClose }: { onClose: () => void }) => {
           className="h-full flex flex-col justify-center"
           onClick={() => setSubMenu({ ...subMenu, product: !subMenu.product })}
         >
-          <Link href="#">
+          <span>
             Product <ChevronDown className="w-2 h-2 inline ml-2 mb-[2px]" />
-          </Link>
+          </span>
           <div
-            className={`bg-white ${subMenu.product ? "h-[13.125rem]" : "h-0"} transition-[height_0.3s] overflow-hidden`}
+            className={`bg-white ${
+              subMenu.product ? "h-[13.125rem]" : "h-0"
+            } transition-[height_0.3s] overflow-hidden`}
           >
             <ul className="flex flex-col">
               {[...Array(5)].map((_, i) => (
@@ -55,11 +57,13 @@ const HeaderMenu = ({ onClose }: { onClose: () => void }) => {
             setSubMenu({ ...subMenu, template: !subMenu.template })
           }
         >
-          <Link href="#">
+          <span>
             Template <ChevronDown className="w-2 h-2 inline ml-2 mb-[2px]" />
-          </Link>
+          </span>
           <div
-            className={`bg-white ${subMenu.template ? "h-[7.875rem]" : "h-0"} transition-[height_0.3s] overflow-hidden`}
+            className={`bg-white ${
+              subMenu.template ? "h-[7.875rem]" : "h-0"
+            } transition-[height_0.3s] overflow-hidden`}
           >
             <ul className="flex flex-col">
               {[...Array(3)].map((_, i) => (
