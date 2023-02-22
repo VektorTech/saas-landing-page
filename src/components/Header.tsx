@@ -66,14 +66,14 @@ export default function Header() {
               Start Free
             </Button>
           </div>
+          <button
+            aria-label="open navigation menu"
+            onClick={() => setIsOpen(true)}
+            className="md:hidden"
+          >
+            <HamburgerMenu />
+          </button>
         </div>
-        <button
-          aria-label="open navigation menu"
-          onClick={() => setIsOpen(true)}
-          className="md:hidden absolute right-2 top-1 bg-primary"
-        >
-          <HamburgerMenu />
-        </button>
       </header>
 
       {isOpen && (
